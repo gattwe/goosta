@@ -12,7 +12,7 @@
             <col width="15%"/>
             <col width="35%"/>
         </colgroup>
-        <caption>게시글 상세</caption>
+        <caption>게시글 상세2</caption>
         <tbody>
             <tr>
                 <th scope="row">글 번호</th>
