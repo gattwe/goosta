@@ -11,6 +11,6 @@
  <a href= "/first/sample/openSampleList.do" >게시판</a> 
  
  
- 오송하짱이다.
+ 오송하짱이다.zzzzzzz
 </body>
 </html>
