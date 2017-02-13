@@ -20,7 +20,7 @@ import first.common.service.CommonService;
 public class CommonController {
     Logger log = Logger.getLogger(this.getClass());
      
-    @Resource(name="commonService")//砺什闘
+    @Resource(name="commonService")//けいしかいしかいしぉ
     private CommonService commonService;
     
     @RequestMapping(value="/common/downloadFile.do")
