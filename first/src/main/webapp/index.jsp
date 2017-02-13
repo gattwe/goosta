@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>Insert title here22</title>
 </head>
 <body>
  <a href= "/first/sample/openSampleList.do" >인터셉터</a> 
