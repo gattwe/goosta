@@ -25,8 +25,8 @@ public class SampleController {
 		ModelAndView mv = new ModelAndView("/sample/boardList");                  
 		List<Map<String,Object>> list = sampleService.selectBoardList(commandMap);  
 mv.addObject("list", list);                   
-return mv;    
-} 
+return mv;
+}
 	@RequestMapping(value="/sample/testMapArgumentResolver.do")
 	public ModelAndView testMapArgumentResolver(CommandMap commandMap) throws Exception{
 	    ModelAndView mv = new ModelAndView("");
