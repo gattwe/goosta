@@ -8,5 +8,6 @@
 </head>
 <body>
 	<jsp:forward page="reportdetail.do" />
+	택우테스트
 </body>
 </html>
