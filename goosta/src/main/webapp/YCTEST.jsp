@@ -9,5 +9,6 @@
 <body>
 	<h1>test jsp page</h1> 
 	<h2>브랜치 생성</h2>
+	<h3>브랜치에서 전송</h3>
 </body>
 </html> 
