@@ -21,6 +21,6 @@ public class OrderAndPayController {
 	public String cart() {
 		
 		
-		return "orderandpay/pay";
+		return "orderandpay/cart";
 	}
 }

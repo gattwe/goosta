@@ -33,10 +33,10 @@ element.style {
 .register-main{
 	padding: 30px 0 75px;
 	margin: auto;
-	margin-left: 20%;
-	
+	margin-left: 20%;	
 	margin-top: 10%;
 }
+
 .register-main h3{
 	margin-bottom: 30px;
 	font: 30px/30px 'NotoSansKRBold','Nanum Gothic';
