@@ -9,7 +9,7 @@
     width: 100%;
     height: 30px;
     padding-top: 10px;
-    padding-left: 1035px;
+    padding-left: 1266px;
 }
 a {
 	color: #999;
@@ -20,7 +20,7 @@ a {
 		<header>
 		<!-- LOGIN -->
 			<div class="login-right">
-				<a href="#">로그인</a>&nbsp; |&nbsp;
+				<a href="login.do">로그인</a>&nbsp; |&nbsp;
 				<a href="#">회원가입</a>&nbsp; |&nbsp;
 				<a href="#">장바구니</a>&nbsp; |&nbsp;
 				<a href="#">주문조회</a>&nbsp; |&nbsp;
@@ -49,7 +49,7 @@ a {
 					<div class="pull-right">
 						<nav class="navmenu">
 							<ul>
-								<li class="sub-menu">
+								<li class="sub-menu" style="height: 70px;">
 									<a href="#home" class="bigmenu">ShoppingMall</a>
 									<div class="depth2_contents">
 										<div class="shopping_mall">
@@ -142,7 +142,7 @@ a {
 										</div>
 									</div>
 								</li>
-								<li class="sub-menu">
+								<li class="sub-menu" style="height: 70px;">
 									<a href="#about" class="bigmenu">Community</a>
 									<div class="depth2_contents">
 										<div class="community_words">
