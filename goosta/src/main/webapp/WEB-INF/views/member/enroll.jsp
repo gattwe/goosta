@@ -329,6 +329,11 @@ div, ul, ol {
 	<div class="contents">
 		<div class="register_form">
 		<form action="" id="frmDetail" name="frmDetail">
+		<div class="row">
+			<div class="col">
+				<input type="text" class="name_input" maxlength="15" placeholder="이름">
+			</div>
+		</div>
 		<div class="row id_check">
 			<div class="col">
 				<input type="text" class="id_input" maxlength="15" placeholder="아이디">
