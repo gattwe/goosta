@@ -12,4 +12,4 @@ public class SearchController {
 		return "search/searchView";
 	}
 	
-}
+}  
