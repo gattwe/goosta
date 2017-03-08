@@ -15,4 +15,10 @@ public class CommonController {
 		
 		return "member/login";
 	}
+	
+	@RequestMapping("main.do")
+	public String viewMain(){
+		
+		return "common/main";
+	}
 }

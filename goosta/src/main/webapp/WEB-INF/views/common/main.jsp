@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>임시메인화면</title>
 </head>
 <body>
-	<jsp:forward page="main.do" />
-	수정
+<h1>임시 메인 화면 입니다.</h1>
+<a href="faq/viewCustomer.do">고객센터</a>
 </body>
 </html>

@@ -1,0 +1,295 @@
+@CHARSET "UTF-8";
+label{
+cursor: default;
+}
+.container-fluid {
+	width: 1200px;
+	height: 850px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#row-fluid {
+	width: 100%;
+}
+
+.span2 {
+	width: 300px;
+	height: 650px;
+ margin-left: 13px;
+}
+
+.span10 {
+	height: 650px;
+}
+
+#span2 {
+	width: 30%;
+	height: 700px;
+}
+
+#span10 {
+	width: 66%;
+	height: 700px;
+}
+
+.span12 {
+	width: 98%;
+	border: 1px solid lightgray;
+	height: 120px;
+	margin: 0px;
+	margin-top: 10px;
+	background : white;
+}
+
+#menu {
+	width: 100%;
+	height: 200px;
+	border: 1px solid lightgray;
+	margin-bottom: 50px;
+	z-index: 0;
+	background: lightgray;
+	position: relative;
+	background-image : url("/goosta/resources/img/ysw/title.png");
+	background-size: 100% 120%;
+    border-radius: 0px 15px 0px 15px;
+}
+
+#tell {
+	border: 1px solid lightgray;
+	height: 200px;
+}
+
+#sidemenu {
+	border: 1px solid lightgray;
+	height: 478px;
+	margin-left: 0;
+}
+
+#faq {
+	border: 1px solid lightgray;
+	height: 400px
+}
+
+#notice {
+	border: 1px solid lightgray;
+	height: 278px;
+	margin-left: 0;
+}
+
+#recommend {
+	border: 1px solid lightgray;
+}
+
+#menu_ul {
+	position: relative;
+	z-index: 1;
+	width: 59%;
+	height: 46px;
+	margin: auto;
+	margin-top: 174px;
+	border : 1px solid lightgray;
+	display: block;
+	background-color: white;
+}
+
+#menu_ul li {
+	float: left;
+	list-style: none;
+	text-align: center;
+	display: block;
+	width: 234px;
+	line-height: 50px;
+	font-weight : bold;
+	font-size: 11pt;
+	height: 47px;
+	color : gray;
+	cursor : pointer;
+}
+#menu_ul li:hover{
+background : #f6f6f6;
+opacity : 0.5;
+}
+#title {
+	font-weight: bold;
+	color: white;
+	font-size: 40pt;
+	text-align: center;
+	margin-top: 50px;
+}
+#center_li{
+border-left : 1px solid #f6f6f6;	
+border-right : 1px solid #f6f6f6;	
+}
+a {
+text-decoration: none;
+color: gray;
+font-weight: bold;
+cursor : pointer;
+}
+a:hover{
+text-decoration : none;	
+color : gray;
+}
+#subtitle {
+	color: white;
+	font-size: 15pt;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#searchbar {
+	width: 100%;
+	height: 100px;
+}
+
+#search_ul {
+	width: 60%;
+	margin-left: 245px;
+	height: 35px;
+	margin-top: 10px;
+	list-style: none;
+}
+
+#search_ul li {
+	float: left;
+}
+
+#search_input {
+	margin: 0px;
+	margin-left: 10;
+	margin-right: 10;
+	height: 30;
+	width: 260px;
+	border: 2px solid lightgray;
+	border-radius: 0px;
+}
+
+#search_button {
+	height: 30;
+	font-weight: bold;
+	background: white;
+	font-size: 10pt;
+	border: 2px solid lightgray;
+	color: gray;
+}
+#search_button:hover{
+color : 027dbf;
+}
+
+#search_label {
+font-size: 16px;
+color: gray;
+margin: auto;
+padding: 10;
+}
+#content{
+height: 298px;
+}
+
+#qtable{
+width : 90%;
+margin : auto;
+margin-bottom : 10px;
+text-align : center;
+border-top : 1px solid lightgray;
+collapce : collapce:
+}
+#qtable th{
+font-size : 10pt;
+border : 1px solid lightgray;
+height : 32px;
+backgroud : #f6f6f6;
+width : 30px;
+color : gray;
+cursor: pointer;
+}
+dl{
+margin : auto;
+width : 90%;
+color : gray;
+}
+dt{
+ border : 1px solid lightgray;
+ position : relative;
+ height : 35px;
+ line-height : 35px;
+ font-size : 10pt;
+ text-align: center;
+}
+dd{
+height : 150px;
+border : 1px solid lightgray;
+border-top : 0px;
+padding : 10px 36px 10px ;
+margin : 0px;
+}
+#s4, #s5{
+float : left;
+}
+dt:hover{
+background : #f6f6f6;
+}
+#s1{
+display: inline-block;
+width: 10%;
+text-align: center;
+}
+#s2{
+display: inline-block;
+width: 78%;
+text-align: center;
+}
+#s3{
+display: inline-block;
+width: 10%;
+text-align: center;
+}
+#notice_label{
+font-size: 16px;
+	color: gray;
+	margin: auto;
+	padding: 10;
+	    margin-bottom: 12px;
+}
+#notice_table{
+margin : auto;
+width : 90%;
+border-bottom : 1px solid lightgray;
+
+}
+#notice_table tr{
+border-top : 1px solid lightgray;
+}
+#notice_table tr td{
+height : 35px;
+color : gray;
+text-align : center;
+}
+#sidemenu_ul{
+width : 100%;
+list-style : none;
+text-align : center;
+font-size : 12pt;
+margin : 0;
+}
+#sidemenu_ul li{
+height : 157px;
+}
+#etc1{
+border-top : 1px solid lightgray;
+border-bottom : 1px solid lightgray;
+}
+.s_ul{
+padding-top: 10px;
+padding-bottom:70px;
+}
+.icon{
+padding-top: 10px;
+}
+.menu_label{
+width : 100%; 
+margin-top:13px; 	
+line-height : 19px;
+font-weight : bold;
+}
