@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>test jsp page</h1>
+	<h1>test jsp page</h1> 
+	<h2>브랜치 생성</h2>
+	<h3>브랜치에서 전송</h3> 
+	<h4>브랜치 병합 후 다시 커밋</h4>
 </body>
 </html> 
