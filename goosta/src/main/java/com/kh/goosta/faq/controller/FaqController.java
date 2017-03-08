@@ -9,6 +9,6 @@ public class FaqController {
 
 	@RequestMapping("/viewCustomer.do")
 	public String CustomerView(){
-		return "customer/customer2";
+		return "event/eventDetail";
 	}
 }
