@@ -50,9 +50,12 @@ cursor: default;
 	z-index: 0;
 	background: lightgray;
 	position: relative;
-	background-image : url("/goosta/resources/img/ysw/title.png");
+	background-image : url("resources/images/ysw/title.png");
 	background-size: 100% 120%;
     border-radius: 0px 15px 0px 15px;
+}
+#menu:hover{
+cursor : pointer;
 }
 
 #tell {
@@ -121,13 +124,15 @@ opacity : 0.5;
 border-left : 1px solid #f6f6f6;	
 border-right : 1px solid #f6f6f6;	
 }
-a {
+#menu_ul li a {
+display : inline-block;
+width : 100%;
 text-decoration: none;
 color: gray;
 font-weight: bold;
 cursor : pointer;
 }
-a:hover{
+#menu_ul li a:hover{
 text-decoration : none;	
 color : gray;
 }

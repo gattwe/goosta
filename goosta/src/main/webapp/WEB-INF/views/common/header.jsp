@@ -24,6 +24,7 @@ a {
 				<a href="#">회원가입</a>&nbsp; |&nbsp;
 				<a href="#">장바구니</a>&nbsp; |&nbsp;
 				<a href="#">주문조회</a>&nbsp; |&nbsp;
+				<a href="viewCustomer.do">고객센터</a>&nbsp; |&nbsp;
 				<a href="#">마이페이지</a>
 			</div>
 		
@@ -168,7 +169,7 @@ a {
 													</li>
 													<li class="com_board">
 														<div class="community_title">
-															<a href="#" style="text-align: center;margin-bottom: 10px;margin-top: 30px;font-weight: 800;font-size: 16pt;color: #666;padding: 0;">
+															<a href="viewShand.do" style="text-align: center;margin-bottom: 10px;margin-top: 30px;font-weight: 800;font-size: 16pt;color: #666;padding: 0;">
 																중고거래
 															</a>
 														</div>

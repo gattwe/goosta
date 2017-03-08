@@ -7,7 +7,7 @@
 <link href="resources/css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="resources/js/bootstrap/bootstrap.min.js"></script>
-<title>faq</title>
+<title>공지사항</title>
 </head>
 <style>
 .container-fluid {
@@ -64,18 +64,18 @@
 border-left : 1px solid #f6f6f6;
 border-right : 1px solid #f6f6f6;
 }
-#faq_table {
+#notice_table {
 	width: 80%;
 	margin: auto;
 	border: 1px solid lightgray;
 	text-align: center;
 }
-#faq_table td {
+#notice_table td {
 	border-top: 1px solid lightgray;
 	height: 35px;
 	color : gray;
 }
-#faq_table_tr{
+#notice_table_tr{
 font-weight : bold;
 height: 30px;
 }
@@ -123,7 +123,10 @@ width : 100%;
 	font-weight: bold;
 	cursor: pointer;
 }
-a:hover {
+#noitce_table a{
+color : gray;
+}
+#noitce_table a:hover {
 text-decoration: none;
 color : darkgray;
 }
@@ -135,7 +138,7 @@ color : darkgray;
 	width: 105px;
 }
 #title{
-width: 43px;
+width: 87px;
 margin: auto;
 margin-bottom: 30;
 color : gray;
@@ -159,21 +162,10 @@ cursor : pointer;
 			</ul>
 		</div>
 		<div id="title">
-		FAQ
+		공지사항
 		</div>
-		<table id="submenu_table">
-			<tr id="submenu_tr">
-				<th>전체</th>
-				<th>배송</th>
-				<th>주문/결제</th>
-				<th>교환/반품</th>
-				<th>회원</th>
-				<th>기타</th>
-			</tr>
-		</table>
-
-		<table id="faq_table">
-			<tr id="faq_table_tr">
+		<table id="notice_table">
+			<tr id="notice_table_tr">
 				<td>번호</td>
 				<td colspan="3">제목</td>
 				<td>작성일</td>

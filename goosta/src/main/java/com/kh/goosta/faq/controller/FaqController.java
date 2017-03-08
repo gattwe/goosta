@@ -4,11 +4,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("faq")
 public class FaqController {
 
-	@RequestMapping("/viewCustomer.do")
+	@RequestMapping("viewfaq.do")
 	public String CustomerView(){
-		return "event/eventDetail";
+		return "faq/faq";
 	}
 }

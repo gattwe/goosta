@@ -1,18 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="/test/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="/test/css/notice.css" rel="stylesheet">
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/customer.js"></script>
 <title>1:1문의</title>
+
+<link href="resources/css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="resources/js/bootstrap/bootstrap.min.js"></script>
 </head>
+
 <style>
 .container-fluid {
 	width: 1200px;
@@ -33,7 +31,7 @@
 	z-index: 0;
 	background: lightgray;
 	position: relative;
-	background-image : url("img/title.png");
+	background-image : url("resources/images/ysw/title.png");
 	background-size: 100% 120%;
     border-radius: 0px 15px 0px 15px;
 }
@@ -62,24 +60,19 @@
 	color : gray;
 	cursor : pointer;
 }
-#menu_ul li:hover{
-background : lightgray;
-}
 #center_li{
 border-left : 1px solid #f6f6f6;
 border-right : 1px solid #f6f6f6;
 }
-#menu_ul li:hover {
-	background : #f6f6f6;
-	opacity : 0.5;
-}
-a {
+#menu_ul li a {
+display : inline-block;
+width : 100%;
 text-decoration: none;
 color: gray;
 font-weight: bold;
 cursor : pointer;
 }
-a:hover{
+#menu_ul li a:hover{
 text-decoration : none;
 }
 #qnatable{
@@ -98,7 +91,7 @@ height : 35px;
 }
 #qnatable td input{
 border-radius : 0px;
-height : 30px;
+height : 20px;
 margin-top : 10px;
 margin-left : 10px;
 }
@@ -143,14 +136,17 @@ margin-bottom: 30;
 color : gray;
 font-size : 16pt;
 }
+#menu:hover{
+cursor : pointer;
+}
 </style>
 <body>
 	<div class="container-fluid">
-		<div id="menu">
+		<div id="menu" onclick="location.href='viewCustomer.do';">
 			<ul id="menu_ul">
-				<li><a>공지사항</a></li>
-				<li id="center_li"><a>FAQ</a></li>
-				<li><a>1:1 문의</a></li>
+				<li><a href="viewNotice.do">공지사항</a></li>
+				<li id="center_li"><a href="viewfaq.do">FAQ</a></li>
+				<li><a href="viewquestion.do">1:1 문의</a></li>
 			</ul>
 		</div>
 		

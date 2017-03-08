@@ -1,27 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html5>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="${pageContext.request.contextPath}/resources/css/customer/customer.css" rel="stylesheet">
+<link href="resources/css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="resources/css/customer/customer.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/bootstrap/js/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/customer/customer.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="resources/js/bootstrap/bootstrap.min.js"></script>
+<script src="resources/js/customer/customer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 
 <title>고객센터</title>
+
 <body>
-	<div class="container-fluid">
-		<div id="menu">
+	<div class="container-fluid" >
+		<div id="menu" onclick="location.href='viewCustomer.do';">
 			<ul id="menu_ul">
-				<li><a>공지사항</a></li>
-				<li id="center_li"><a>FAQ</a></li>
-				<li><a>1:1 문의</a></li>
+				<li><a href="viewNotice.do">공지사항</a></li>
+				<li id="center_li"><a href="viewfaq.do">FAQ</a></li>
+				<li><a href="viewquestion.do">1:1 문의</a></li>
 			</ul>
 		</div>
 		<div class="row-fluid" id="row-fluid">
