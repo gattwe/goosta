@@ -1,0 +1,109 @@
+/*-----------------------------------------------------------------------------------*/
+/*	FOOTER
+/*-----------------------------------------------------------------------------------*/
+div{
+	font-size: 12px;
+    font-family: helvetica, arial, verdana, tahoma, 'NanumGothic', '나눔고딕', Malgun Gothic, '맑은고딕', Apple Gothic, Dotum, '돋움', sans-serif;
+    letter-spacing: -1px;
+    color: #333;
+}
+
+.global_footer_info .global_info_cont {
+    padding: 20px 30px;
+    border-top: 1px solid #2c2c2c;
+    background-color: #1d1d1d;
+}
+.global_footer_info .global_info_cont > ul {
+    box-sizing: border-box;
+}
+.global_footer_info .global_info_left {
+    float: left;
+}
+
+.global_footer_info .global_info_cont > ul > li {
+    float: left;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #999;
+}
+
+.global_footer_info .global_info_cont > ul > li > a {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #999;
+}
+
+.global_footer_info .global_info_cont2 {
+    padding: 40px 0 60px;
+    background-color: #1d1d1d;
+    border-top: 1px solid #2c2c2c;
+    text-align: center;
+}
+
+.global_footer_info .global_info_cont2_inner {
+    display: inline-block;
+}
+
+.global_footer_info .global_info_cont2_inner > ul {
+    float: left;
+}
+
+.global_footer_info .global_info_cont2_inner li {
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #8d8d8d;
+}
+
+.global_footer_info .global_info_left > li > a img {
+    position: relative;
+    top: -1px;
+}
+
+.global_footer_info .global_info_cont2_inner > ul + ul {
+    margin-left: 45px;
+}
+
+.global_footer_info .global_info_right {
+    float: right;
+}
+.global_footer_info .global_info_cont2_inner > ul {
+    float: left;
+}
+
+.global_footer_info .global_info_cont2_inner li {
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #8d8d8d;
+}
+
+.global_footer_info .global_info_cont2_inner a {
+    padding: 0 7px 0 3px;
+    background: url(http://image.nike.co.kr/global/global_ico_footer_arrow_4x7.png) no-repeat right 4px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #b2b2b2;
+}
+
+.global_footer_info .global_info_cont2_inner li {
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #8d8d8d;
+}
+
+.global_content_guide_list .global_content_guide_box {
+    position: absolute;
+    bottom: 16px;
+    left: -241px;
+    display: none;
+    width: 482px;
+}
+
+.global_content_guide_list .global_guide_layer {
+    padding: 20px 20px 30px;
+    background-color: #fff;
+}
