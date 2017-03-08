@@ -8,6 +8,6 @@
 </head>
 <body>
 	<jsp:forward page="reportdetail.do" />
-	데헷
+	ㅋㅋ
 </body>
 </html>
