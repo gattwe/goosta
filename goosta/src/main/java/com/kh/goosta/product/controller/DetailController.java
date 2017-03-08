@@ -13,4 +13,11 @@ public class DetailController {
 		return "product/detail";
 	}
 	
+	@RequestMapping(value = "category.do")
+	public String category() {
+		
+		
+		return "product/category";
+	}
+	
 }

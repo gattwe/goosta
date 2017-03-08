@@ -15,4 +15,11 @@ public class CommonController {
 		
 		return "member/login";
 	}
+	
+	@RequestMapping(value = "main.do", method = RequestMethod.GET)
+	public String main(Locale locale, Model model) {
+		
+		
+		return "common/main";
+	}
 }
