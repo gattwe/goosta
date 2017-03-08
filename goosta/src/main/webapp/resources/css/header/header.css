@@ -135,15 +135,14 @@ header {
 .sub-menu:hover .depth2_contents{
 	display: block;
 }
-
 .depth2_contents {
     display: none;
     width: 100%;
     height : 400px;
     position: absolute;
     top: 70px;
-    left: -1160px;
-    padding-right:1460px;
+    left: -1300px;
+    padding-right: 1761px;
     padding-left:300px; 
     background: #fff;
     -webkit-box-shadow: 0 12px 24px rgba(0,0,0,0.1);
@@ -164,7 +163,7 @@ header {
     margin: 10px auto 20px;
     width: 1100px;
     top: 144px;
-    left: 216px;
+    left: 394px;
     height: 300px;
 }
 
@@ -172,7 +171,7 @@ header {
 	overflow: hidden;
 	width: 1200px;
 	position: fixed;
-   	left: 209px;
+   	left: 402px;
 }
 
 div{
@@ -242,7 +241,7 @@ dl{
 .community_words{
 	font-size: 15pt;
     position: fixed;
-    left: 647px;
+    left: 862px;
     margin-top: 20px;
     font-weight: bold;
 }
