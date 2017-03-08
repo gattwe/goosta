@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>주문정보</title>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
 <script type="text/javascript">
 IMP.init('imp26929010');
 IMP.request_pay({
@@ -531,7 +530,6 @@ section .prods_info .box.total_p .price-container .point strong {
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</section>
 </body>
