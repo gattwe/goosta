@@ -107,7 +107,9 @@ element.style {
 }
 
 .btn-ctm.btn-lgray{background: #ccc;}
+
 .btn-ctm.btn-blue{background: #027dbf;}
+
 .btn-ctm span{
 	position: relative;
 	text-align: center;
