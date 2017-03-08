@@ -8,6 +8,6 @@
 </head>
 <body>
 	<jsp:forward page="reportdetail.do" />
-	ㅋㅋ
+	인덱스으응으으
 </body>
 </html>
