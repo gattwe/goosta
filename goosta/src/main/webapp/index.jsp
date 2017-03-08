@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:forward page="reportdetail.do" />
+	<jsp:forward page="main.do" />
+	수정
 </body>
 </html>

@@ -12,7 +12,13 @@ public class CommonController {
 	@RequestMapping(value = "login.do", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		
-		
+	
 		return "member/login";
+	}
+	
+	@RequestMapping("main.do")
+	public String viewMain(){
+		
+		return "common/main";
 	}
 }

@@ -135,7 +135,7 @@ border : 0;
 		
 <table id="comment_table"><tr><td id="comment_td"><textarea id="comment"></textarea></td><td id="enroll_td"><input type="button" id="enroll" value="등록"></td></tr></table>
 		
-			
+
 </div>
 </body>
 </html>
