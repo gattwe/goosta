@@ -4,17 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>신고게시판 상세보기</title>
+<title>중고거래 상세보기</title>
 
 <style type="text/css">
-	div.reportboard h3{
-		border-bottom: 3px solid #666;
-	    color: #000;
-	    padding: 13px 0;
-	    margin-bottom: 10px;
-	    font: bold 14px 'Nanum Gothic',Nanum Gothic,'Dotum',dotum;
-	}
-	.cont758 {
+   div.reportboard h3{
+      border-bottom: 3px solid #666;
+       color: #000;
+       padding: 13px 0;
+       margin-bottom: 10px;
+       font: bold 14px 'Nanum Gothic',Nanum Gothic,'Dotum',dotum;
+   }
+   .cont758 {
    width : 1100px;
 height : 900px;
 margin : auto;
@@ -70,19 +70,19 @@ background : white;
 
 
 .btn-ctm.btn-blue{
-	margin-top: 15px;
-	width: 130px;
-	height: 38px;
-	border: none;
-	color: white;
-	float: left;
-	margin-left: 20px;
+   margin-top: 15px;
+   width: 130px;
+   height: 38px;
+   border: none;
+   color: white;
+   float: left;
+   margin-left: 20px;
 }
 
 .btn-ctm.btn-blue{background: #027dbf;}
 
 .btn-ctm.btn-blue.delete{
-	margin-left: 117px;
+   margin-left: 117px;
 }
 
 #enroll{
@@ -107,35 +107,36 @@ margin-bottom: 100px;
 border : 0;
 }
 #comment_table textarea{
-	width: 700px;
-	height: 100px;
-	resize: none;
+   width: 700px;
+   height: 100px;
+   resize: none;
+}
+input{
+border : 0;
 }
 </style>
 </head>
 <body>
 <div class="cont758">
-		<div class="reportboard">
-			<h3>REPORT</h3>
-		</div>
-		<form>
+      <div class="reportboard">
+         <h3>Sell Detail</h3>
+      </div>
+      <form>
 <table class="content">
-<tr><td class="td_title">제목</td><td class="td_con"></td></tr>
-<tr><td class="td_title">작성자</td><td class="td_con"></td></tr>
-<tr><td class="td_title">신고사유</td><td class="td_con">
-	
-</td></tr>
-<tr><td class="td_title">내용</td><td class="td_con"><textarea ></textarea></td></tr>
+<tr><td class="td_title">제목</td><td class="td_con"><input type="text" id="title" readonly/></td></tr>
+<tr><td class="td_title">가격</td><td class="td_con"><input type="text" id="price" readonly/></td></tr>
+<tr><td class="td_title">브랜드</td><td class="td_con"><input type="text" id="brand" readonly/></td></tr>
+<tr><td class="td_title">내용</td><td class="td_con"><textarea readonly></textarea></td></tr>
 </table>
-	<div class="btn-area">
-	<input type="submit" class="btn-ctm btn-blue delete" value="delete">
-	<input type="submit" class="btn-ctm btn-blue" value="modify">
-	</div>
+   <div class="btn-area">
+   <input type="submit" class="btn-ctm btn-blue delete" value="delete">
+   <input type="submit" class="btn-ctm btn-blue" value="modify">
+   </div>
 </form>
-		
+      
 <table id="comment_table"><tr><td id="comment_td"><textarea id="comment"></textarea></td><td id="enroll_td"><input type="button" id="enroll" value="등록"></td></tr></table>
-		
-
+      
+         
 </div>
 </body>
 </html>
