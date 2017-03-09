@@ -294,20 +294,6 @@ jQuery(document).ready(function(){
 			</div>
 			<div class="cont758">
 				<form id="frmDetail" name="frmDetail" method="post" action="">
-				    <input type="hidden" id="S_COMMAND" name="command">			
-				    <input type="hidden" id="S_PAGE" name="PAGE_CUR" value="">
-				    <input type="hidden" id="PAGE_LEN" name="PAGE_LEN">		
-	                <input type="hidden" id="S_ORDER_BY" name="S_ORDER_BY" value="1">
-	                <input type="hidden" id="S_PAGECNT" name="S_PAGECNT" value="100">
-	                <input type="hidden" id="PROD_CD" name="PROD_CD">
-	                <input type="hidden" id="SS_MEM_TYPE" name="SS_MEM_TYPE" value="null">
-	                <input type="hidden" id="S_COLOR" name="S_COLOR" value=""> 
-	                <input type="hidden" id="S_SIZE" name="S_SIZE" value="">
-	                <input type="hidden" id="S_TECH" name="S_TECH" value="">
-	                <input type="hidden" id="SITE_CD" name="SITE_CD" value="1">
-	                <input type="hidden" id="CONR_CD" name="CONR_CD" value="10">
-	                <input type="hidden" id="CATG_CLK" name="CATG_CLK" value="Y">
-	                <input type="hidden" id="CATG_CHK" name="CATG_CHK" value="">
 					<div class="sort">
 						<ul>
 							<li><a onmousedown="javascript:fn_trkClickTrace('^컨텐츠 정렬^베스트순');" class="on" href="javascript:fn_order(1)">베스트순</a></li>
