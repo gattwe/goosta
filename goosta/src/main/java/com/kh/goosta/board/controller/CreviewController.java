@@ -11,19 +11,19 @@ public class CreviewController {
 			return "board/Creview/CreviewWrite";
 		}
 		
-		@RequestMapping(value = "Creivew.do")
+		@RequestMapping(value = "Creview.do")
 		public String Creview(){
 			return "board/Creview/Creview";
 		}
 		
-		@RequestMapping(value = "CreivewModify.do")
+		@RequestMapping(value = "CreviewModify.do")
 		public String CreivewModify(){
-			return "board/Creview/CreivewModify";
+			return "board/Creview/CreviewModify";
 		}
 		
-		@RequestMapping(value = "CreivewList.do")
+		@RequestMapping(value = "CreviewList.do")
 		public String CreivewList(){
-			return "board/Creview/CreivewList";
+			return "board/Creview/CreviewList";
 		}
 		
 
