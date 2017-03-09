@@ -1,9 +1,7 @@
 package com.kh.goosta.orderandpay.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 
 
@@ -22,5 +20,12 @@ public class OrderAndPayController {
 		
 		
 		return "orderandpay/cart";
+	}
+	
+	@RequestMapping(value = "finish.do")
+	public String finish() {
+		
+		
+		return "orderandpay/finish";
 	}
 }

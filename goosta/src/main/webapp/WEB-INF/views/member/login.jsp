@@ -49,6 +49,9 @@ jQuery(document).ready(function(){
 </script>
 <style>
 
+.login-content{
+	height: 638px;
+}
 .login-form{
 	display: inline-block;
 	position: relative;
@@ -116,6 +119,7 @@ element.style {
 }
 #container_r {
     width: 100%;
+    height: 1080px;
     background: #eaeaea;
     position: relative;
     z-index: 20;

@@ -126,13 +126,13 @@ section a:visited {
 
 
 #reviewDiv table tr td .emptyStarSpan {
-	background: url(/ui/image/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
+	background: url(resources/images/product/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
 	margin-top: 2px;	/* 줄 높이 맞추기 */
 	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
 }
 
 #reviewDiv table tr td .emptyStarSpan .fullStarSpan {
-	background: url(/ui/image/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
+	background: url(resources/images/product/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
 	width: 70%;		/* 평점 조절 (10%당 별 반칸) */
 	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
 }
@@ -215,7 +215,7 @@ $(function(){
 			</tr>
 			<tr>
 				<td>1</td>
-				<td><img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_001.png" width="150" height="150" border="0"></td>
+				<td><img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_001.png" width="150" height="150" border="0"></td>
 				<td>타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</td>
 				<td><span class="emptyStarSpan"><span class="fullStarSpan"></span></span></td>
 				<td>oht5080</td>
@@ -261,15 +261,15 @@ $(function(){
 		</table>
 		<div id="reviewBottom">
 			<div id="reviewPagingDiv">
-				<a href="#" class="reviewPageArrow"><img src="/ui/image/DoubleChevronLeft.png" width="14" height="14" border="0"></a>
-				<a href="#" class="reviewPageArrow"><img src="/ui/image/ChevronLeft.png" width="14" height="14" border="0"></a>
+				<a href="#" class="reviewPageArrow"><img src="resources/images/product/DoubleChevronLeft.png" width="14" height="14" border="0"></a>
+				<a href="#" class="reviewPageArrow"><img src="resources/images/product/ChevronLeft.png" width="14" height="14" border="0"></a>
 				<a href="#" class="reviewPageNum"><b>1</b></a>
 				<a href="#" class="reviewPageNum">2</a>
 				<a href="#" class="reviewPageNum">3</a>
 				<a href="#" class="reviewPageNum">4</a>
 				<a href="#" class="reviewPageNum">5</a>
-				<a href="#" class="reviewPageArrow"><img src="/ui/image/ChevronRight.png" width="14" height="14" border="0"></a>
-				<a href="#" class="reviewPageArrow"><img src="/ui/image/DoubleChevronRight.png" width="14" height="14" border="0"></a>
+				<a href="#" class="reviewPageArrow"><img src="resources/images/product/ChevronRight.png" width="14" height="14" border="0"></a>
+				<a href="#" class="reviewPageArrow"><img src="resources/images/product/DoubleChevronRight.png" width="14" height="14" border="0"></a>
 			</div>
 			<a href="#" id="writeReviewButton">Write</a>
 		</div>

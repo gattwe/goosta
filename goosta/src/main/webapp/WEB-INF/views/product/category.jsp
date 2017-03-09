@@ -319,14 +319,14 @@ jQuery(document).ready(function(){
 							<ul>
 								<li class="">
 									<div class="img">
-										<a href="javascript:fn_prod('BP7236');">
+										<a href="detail.do">
 											<img src="http://image.adidas.co.kr/upload/prod/basic/170/BP7236-1_170X170.jpg" width="170" height="170" alt="[Men's Football] 엑스 티">										
 										</a>										
 									</div>
 									<div class="info">
 										<div class="logo spt_bg sp"> performance</div>
 									</div>
-									<div class="tit"><a href="javascript:fn_prod('BP7236');" title="[Men's Football] 엑스 티">[Men's Football] 엑스 티</a></div>
+									<div class="tit"><a href="detail.do" title="[Men's Football] 엑스 티">[Men's Football] 엑스 티</a></div>
 									<div class="pop_level spt_bg"><div class="spt_bg point">/5</div></div>
 								   	<div class="price">
 							   			<span class="line_through">35,000원</span><span class="sale"><em>28,000</em>원</span>

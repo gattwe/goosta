@@ -135,7 +135,6 @@ header {
 .sub-menu:hover .depth2_contents{
 	display: block;
 }
-<<<<<<< HEAD
 .depth2_contents {
     display: none;
     width: 100%;
@@ -243,116 +242,6 @@ dl{
 	font-size: 15pt;
     position: fixed;
     left: 862px;
-=======
-
-.depth2_contents {
-    display: none;
-    width: 100%;
-    height : 400px;
-    position: absolute;
-    top: 70px;
-    left: -1160px;
-    padding-right:1460px;
-    padding-left:300px; 
-    background: #fff;
-    -webkit-box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-}
-
-
-.shopping_mall{
-	overflow: hidden;
-    position: relative;
-    margin: 10px auto 20px;
-    width: 1100px;
-}
-
-.commuity_menu{
-	overflow: hidden;
-    position: fixed;
-    margin: 10px auto 20px;
-    width: 1100px;
-    top: 144px;
-    left: 216px;
-    height: 300px;
-}
-
-.ctgr_box{
-	overflow: hidden;
-	width: 1200px;
-	position: fixed;
-   	left: 209px;
-}
-
-div{
-	list-style: none;
-}
-
-.img_box{
-	margin-right: 20px;
-	float: left;
-    width: 100%;
-}
-
-.box{
-	margin: 0 10px 0 0;
-    float: left;
-}
-
-dl{
-	margin: 0;
-    padding: 0;
-    text-align: left;
-    line-height: 14px;
-    display : inline-block;
-    margin-right: 75px;
-    height: 400px;
-    position: relative;
-    left: 10px;
-}
-
-.small_picture{
-	margin-top: 20px;
-}
-
-.menu_sort{
-	color:#000;
-	margin-top: 10px;
-	box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-}
-.menu_sort ul li{
-	display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.li_part:hover a{
-	background: #666;
-}
-
-.com_board{
-	margin-right: 66px;
-	box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-	width: 142px;
-}
-.community_title{
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    font-weight: 800;
-    font-size: 16pt;
-}
-.community_content{
-	text-align: center;
-    margin-top: 2px;
-    font-size: 10pt;
-}
-
-.community_words{
-	font-size: 15pt;
-    position: fixed;
-    left: 647px;
->>>>>>> refs/remotes/origin/ohsongha
     margin-top: 20px;
     font-weight: bold;
 }

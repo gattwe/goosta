@@ -128,14 +128,14 @@ section a:visited {
 
 
 #reviewWriteDiv .emptyStarSpan {
-	background: url(/ui/image/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
+	background: url(resources/images/product/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
 	margin-top: 2px;	/* 줄 높이 맞추기 */
 	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
 	margin-right: 2%;
 }
 
 #reviewWriteDiv .emptyStarSpan .fullStarSpan {
-	background: url(/ui/image/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
+	background: url(resources/images/product/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
 	/* width: 70%; */		/* 평점 조절 (10%당 별 반칸) */
 	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
 }

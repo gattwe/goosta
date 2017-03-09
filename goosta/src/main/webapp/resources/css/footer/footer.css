@@ -1,13 +1,18 @@
 /*-----------------------------------------------------------------------------------*/
 /*	FOOTER
 /*-----------------------------------------------------------------------------------*/
-div{
+/* div{
 	font-size: 12px;
     font-family: helvetica, arial, verdana, tahoma, 'NanumGothic', '나눔고딕', Malgun Gothic, '맑은고딕', Apple Gothic, Dotum, '돋움', sans-serif;
     letter-spacing: -1px;
     color: #333;
 }
-
+ */
+ footer{
+   position: relative;
+    bottom: 0;
+    margin-top: 60px;
+}
 .global_footer_info .global_info_cont {
     padding: 20px 30px;
     border-top: 1px solid #2c2c2c;

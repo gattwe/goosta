@@ -127,13 +127,13 @@ section a:visited {
 }
 
 #purchaseOptionDiv #productOptionDiv .emptyStarSpan {
-	background: url(/ui/image/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
+	background: url(resources/images/product/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
 	margin-top: 2px;	/* 줄 높이 맞추기 */
 	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
 }
 
 #purchaseOptionDiv #productOptionDiv .emptyStarSpan .fullStarSpan {
-	background: url(/ui/image/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
+	background: url(resources/images/product/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
 	width: 70%;		/* 평점 조절 (10%당 별 반칸) */
 	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
 }
@@ -482,13 +482,13 @@ section a:visited {
 }
 
 #reviewDiv #reviewRatingDiv .emptyStarSpan {
-	background: url(/ui/image/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
+	background: url(resources/images/product/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
 	margin-top: 2px;	/* 줄 높이 맞추기 */
 	background-size: 140px 26px;	/* 이미지 크기 조절 */
 }
 
 #reviewDiv #reviewRatingDiv .emptyStarSpan .fullStarSpan {
-	background: url(/ui/image/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
+	background: url(resources/images/product/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
 	width: 70%;		/* 평점 조절 (10%당 별 반칸) */
 	background-size: 140px 26px;	/* 이미지 크기 조절 */
 }
@@ -539,7 +539,7 @@ section a:visited {
 	display: inline-block;	/* 없애면 안보임 */
 	width: 253px;		/* div크기 수동으로 설정 *//* background-size랑 크기 맞춰야함 */
 	height: 11px;		/* div크기 수동으로 설정 *//* background-size랑 크기 맞춰야함 */
-	background: url(/ui/image/bg-review-bar3.png) no-repeat 0 0;
+	background: url(resources/images/product/bg-review-bar3.png) no-repeat 0 0;
 	background-size: 253px 11px;	/* 이미지 크기 조절 */
 	vertical-align: -21%;	/* 줄높이 맞추기 */
 }
@@ -548,7 +548,7 @@ section a:visited {
 	display: inline-block;	/* 없애면 안보임 */
 	width: 37px;		/* div크기 수동으로 설정 *//* background-size랑 크기 맞춰야함 */
 	height: 11px;		/* div크기 수동으로 설정 *//* background-size랑 크기 맞춰야함 */
-	background: url(/ui/image/bg-review-bar3-on.png) center 0 no-repeat;
+	background: url(resources/images/product/bg-review-bar3-on.png) center 0 no-repeat;
 	background-size: 37px 11px;	/* 이미지 크기 조절 */
 	vertical-align: top;	/* 줄높이 맞추기 */
 }
@@ -617,13 +617,13 @@ section a:visited {
 }
 
 #reviewDiv #reviewsListDiv .reviewDiv .reviewTitleDiv .emptyStarSpan {
-	background: url(/ui/image/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
+	background: url(resources/images/product/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
 	margin-top: 2px;	/* 줄 높이 맞추기 */
 	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
 }
 
 #reviewDiv #reviewsListDiv .reviewDiv .reviewTitleDiv .emptyStarSpan .fullStarSpan {
-	background: url(/ui/image/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
+	background: url(resources/images/product/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
 	width: 70%;		/* 평점 조절 (10%당 별 반칸) */
 	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
 }
@@ -751,14 +751,14 @@ $(function(){
 <section>
 	<div id="purchaseOptionDiv">
 		<div id="mainImageDiv">
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_001.png" width="620" height="620" border="0">
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_001.png" width="620" height="620" border="0">
 		</div>
 		<div id="selectColorDiv">
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_001.png" width="50" height="50" border="0"><br>
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_011.png" width="50" height="50" border="0"><br>
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_021.png" width="50" height="50" border="0"><br>
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_031.png" width="50" height="50" border="0"><br>
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_041.png" width="50" height="50" border="0">
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_001.png" width="50" height="50" border="0"><br>
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_011.png" width="50" height="50" border="0"><br>
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_021.png" width="50" height="50" border="0"><br>
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_031.png" width="50" height="50" border="0"><br>
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_041.png" width="50" height="50" border="0">
 		</div>
 		<div id="productOptionDiv">
 			<span class="emptyStarSpan"><span class="fullStarSpan"></span></span>
@@ -836,12 +836,12 @@ $(function(){
 			</div>
 		</div>
 		<div id="selectImageDiv">
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_001.png" width="60" height="60" border="0">
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_002.png" width="60" height="60" border="0">
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_003.png" width="60" height="60" border="0">
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_004.png" width="60" height="60" border="0">
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_005.png" width="60" height="60" border="0">
-			<img src="/ui/image/나이키 루나에픽 로우 플라이니트 2_006.png" width="60" height="60" border="0">
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_001.png" width="60" height="60" border="0">
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_002.png" width="60" height="60" border="0">
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_003.png" width="60" height="60" border="0">
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_004.png" width="60" height="60" border="0">
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_005.png" width="60" height="60" border="0">
+			<img src="resources/images/product/나이키 루나에픽 로우 플라이니트 2_006.png" width="60" height="60" border="0">
 		</div>
 	</div>
 	<div id="productDetailDiv">
