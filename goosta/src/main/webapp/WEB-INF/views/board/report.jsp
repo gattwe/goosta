@@ -6,14 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>신고게시판</title>
 <style type="text/css">
-	div.reportboard h3{
-		border-bottom: 3px solid #666;
-	    color: #000;
-	    padding: 13px 0;
-	    margin-bottom: 10px;
-	    font: bold 14px 'Nanum Gothic',Nanum Gothic,'Dotum',dotum;
-	}
-	.cont758 {
+div.reportboard h3{
+	border-bottom: 3px solid #666;
+    color: #000;
+    padding: 13px 0;
+    margin-bottom: 10px;
+    font: bold 14px 'Nanum Gothic',Nanum Gothic,'Dotum',dotum;
+}
+
+.cont758 {
     width: 758px;
     margin: auto;
     overflow: hidden;

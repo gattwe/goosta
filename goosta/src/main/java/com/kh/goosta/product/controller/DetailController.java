@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DetailController {
 	
 	@RequestMapping(value = "detail.do")
-	public String cart() {
+	public String detail() {
 		
 		
 		return "product/detail";
