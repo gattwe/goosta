@@ -247,7 +247,7 @@ height: 46px;
 <script type="text/javascript">
 	function findid(){
 		
-		window.open("findid.do","findid","width=1000,height=600,scrollbars=0,resizable=0,top=100,left=100");
+		window.open("findid.do","findid","width=1000,height=500,scrollbars=0,resizable=0,top=100,left=100");
 
 		
 	}

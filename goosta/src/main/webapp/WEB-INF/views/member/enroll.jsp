@@ -168,7 +168,6 @@ element.style {
 }
 
 div, p, ol, ul, li, img, a, h1, h2, h3, h4, h5, h6, form, span, iframe, dl, dt, dd {
-    margin: 0;
     padding: 0;
     text-align: left;
     line-height: 14px;
@@ -403,7 +402,6 @@ div, ul, ol {
 		var reg_uid = /^[a-z0-9_]{5,12}$/; //5~12자 영문소문자, 숫자, 특수문자 _ 사용가능
 		var reg_upw = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-]|.*[0-9]).{6,24}$/; 
 		//6~16자 영문대소문자, 숫자, 특수문자 혼합하여 사용
-		var reg_nickname = /^[0-9a-zA-Z가-힣]{4,20}$/; //한글10자, 영문20자, 한글,영문,숫자 사용가능
 		
 		//스타일 내역
 		var s_default = {"border":"1px solid #ccc", "background-color":"#fff"}; //기본
@@ -414,8 +412,7 @@ div, ul, ol {
 		var form = $("form"),
 		    uid = $("#uid"),
 		    upw = $("#upw"),
-		    re_upw = $("#re_upw"),
-		    nickname = $("#nickname");
+		    re_upw = $("#re_upw");
 		  
 		
 		$("input[type='text']").focus(function(){

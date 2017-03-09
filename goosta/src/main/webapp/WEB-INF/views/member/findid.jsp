@@ -22,7 +22,7 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 .contents{
 	margin: auto;
 	width: 800px;
-	height: 600px;
+	height: 440px;
 }
 
 ul, ol{

@@ -1,6 +1,5 @@
 package com.kh.goosta.member.Service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kh.goosta.member.dao.MemberDao;
@@ -9,7 +8,7 @@ import com.kh.goosta.member.vo.Member;
 @Service
 public class MemberServiceImpl implements MemberService {
 	
-	@Autowired
+	
 	private MemberDao md;
 	
 	@Override

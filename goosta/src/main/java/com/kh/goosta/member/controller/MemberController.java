@@ -1,9 +1,8 @@
 package com.kh.goosta.member.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+
 
 import com.kh.goosta.member.Service.MemberServiceImpl;
 import com.kh.goosta.member.vo.Member;
@@ -12,10 +11,9 @@ import com.kh.goosta.member.vo.Member;
 public class MemberController {
 	
 	
-	@Autowired
-	private ModelAndView mv;
 	
-	@Autowired
+	
+	
 	private MemberServiceImpl ms;
 	
 	@RequestMapping(value = "enroll.do")
