@@ -1,10 +1,50 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>상세 페이지</title>
+<!-- CSS -->
+<link href="resources/css/header/header.css" rel="stylesheet" type="text/css" />
+<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   
+<!-- FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+  
+<!-- JS -->
+<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+<script src="resources/js/main/jquery.nicescroll.min.js" type="text/javascript"></script>
+<script src="resources/js/main/superfish.min.js" type="text/javascript"></script>
+<script src="resources/js/main/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="resources/js/main/owl.carousel.js" type="text/javascript"></script>
+
+
+<!-- CSS -->
+<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="resources/css/footer/footer.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="resources/css/footer/jquery.scrolltop.css">
+
+
+   
+<!-- FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+   
+<!-- SCRIPTS -->
+<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+<script src="resources/js/main/bootstrap.min.js" type="text/javascript"></script>
+<script src="resources/js/footer/jquery.scrolltop.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	$.scrolltop({
+	    template: '<i class="fa fa-chevron-up"></i>',
+	    class: 'custom-scrolltop'
+	});
+});
+</script>
 <style type="text/css">
 * {
 	padding: 0px;
@@ -21,7 +61,7 @@ span {
 
 section {
 	margin: auto;	/* 좌우 여백 */
-	margin-top: 3%;	/* header겹치지않게 */
+	margin-top: 7%;	/* header겹치지않게 */
 	width: 1300px;		/* 창크기 조절시 내려오면 수정할 것 */
 	height: auto;
 }
@@ -419,7 +459,7 @@ section a:visited {
 #reviewDiv #reviewTitleDiv {
 	font-size: 30px;
 	padding-bottom: 2%;
-	margin-bottom: 7%;
+	margin-bottom: 3%;
     text-align: center;
     border-bottom: 3px solid  #ebebeb;
 }
@@ -428,8 +468,9 @@ section a:visited {
 	display: inline-block;
 	width: 24%;
 	text-align: center;
-	margin-left: 5%;
+	margin-left: 10%;
 	margin-bottom: 10%;
+	vertical-align: top;
 }
 
 #reviewDiv #reviewRatingDiv .emptyStarSpan,
@@ -477,7 +518,7 @@ section a:visited {
 }
 
 #reviewDiv #reviewRatingDiv .ratingDiv {
-	margin-bottom: 5%;
+	margin-bottom: 10%;
 	text-align: left;
 	font-size: 0.9em;
 }
@@ -548,21 +589,81 @@ section a:visited {
 	right: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 #reviewDiv #reviewsListDiv {
 	display: inline-block;
+	margin-left: 12%;
+    width: 45%;
+    margin-bottom: 10%;
 }
+
+#reviewDiv #reviewsListDiv .reviewDiv {
+	padding-bottom: 4%;
+    margin-bottom: 4%;
+    border-bottom: 1px solid lightgray;
+}
+
+#reviewDiv #reviewsListDiv .reviewDiv .reviewTitleDiv {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#reviewDiv #reviewsListDiv .reviewDiv .reviewTitleDiv .emptyStarSpan,
+#reviewDiv #reviewsListDiv .reviewDiv .reviewTitleDiv .emptyStarSpan .fullStarSpan {
+	text-align: left;
+	display: inline-block;	/* 없애면 안보임 */
+	width: 100px;		/* div크기 수동으로 설정 *//* background-size랑 크기 맞춰야함 */
+	height: 18.6px;		/* div크기 수동으로 설정 *//* background-size랑 크기 맞춰야함 */
+}
+
+#reviewDiv #reviewsListDiv .reviewDiv .reviewTitleDiv .emptyStarSpan {
+	background: url(/ui/image/0star2.png) no-repeat 0 0;	/* 별 0개 이미지 */
+	margin-top: 2px;	/* 줄 높이 맞추기 */
+	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
+}
+
+#reviewDiv #reviewsListDiv .reviewDiv .reviewTitleDiv .emptyStarSpan .fullStarSpan {
+	background: url(/ui/image/5star2.png) no-repeat 0 0;	/* 별 5개 이미지 */
+	width: 70%;		/* 평점 조절 (10%당 별 반칸) */
+	background-size: 100px 18.6px;	/* 이미지 크기 조절 */
+}
+
+#reviewDiv #reviewsListDiv .reviewDiv .reviewTitleDiv .productNameSpan {
+	margin-left: 2%;
+	font-size: 0.8em;
+	vertical-align: 25%;
+}
+
+#reviewDiv #reviewsListDiv .reviewDiv .reviewTitleDiv .reviewWriteDateSpan {
+	position: absolute;
+	right: 0;
+	font-size: 0.8em;
+}
+
+#reviewDiv #reviewsListDiv .reviewDiv .reviewContentDiv {
+	
+}
+
+#reviewDiv #reviewsListDiv .reviewDiv .reviewWriterDiv .writerIdSpan {
+	
+}
+
+#reviewDiv #reviewsListDiv .reviewDiv .reviewWriterDiv .writerDetailSpan {
+	
+}
+
+#reviewDiv #reviewsListDiv #moreReviewButton {
+	display: inline-block;
+	width: 50%;
+    height: 45px;
+    border: none;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 15px;
+    line-height: 270%;
+}
+
 
 
 
@@ -584,7 +685,6 @@ section a:visited {
 	(percent) : 상위 속성값에 비례하여 퍼센테이지로(%)로 셀의 수직 정렬 지정
  */
 </style>
-<script type="text/javascript" src ="/ui/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
 	$(".optionDt").hide();
@@ -647,6 +747,7 @@ $(function(){
 </script>
 </head>
 <body>
+<c:import url="/WEB-INF/views/common/header.jsp"/>
 <section>
 	<div id="purchaseOptionDiv">
 		<div id="mainImageDiv">
@@ -861,9 +962,70 @@ $(function(){
 			</div>
 		</div>
 		<div id="reviewsListDiv">
-		
+			<div class="reviewDiv">
+				<div class="reviewTitleDiv">
+					<span class="emptyStarSpan"><span class="fullStarSpan"></span></span>
+					<span class="productNameSpan">C77124</span>
+					<span class="reviewWriteDateSpan">2017-03-07</span>
+				</div>
+				<div class="reviewContentDiv">평소 운동화를 230-35정도 신는데, 아디다스는 보통 크게 나오는 경우가 있어 5-10작게 구입. 발볼 조금있임. 두치수 작게 225로 구입하였는데 성공적이네요</div>
+				<div class="reviewWriterDiv">
+					<span class="writerIdSpan">aud***</span>
+					<span class="writerDetailSpan">여,20대</span>
+				</div>
+			</div>
+			<div class="reviewDiv">
+				<div class="reviewTitleDiv">
+					<span class="emptyStarSpan"><span class="fullStarSpan"></span></span>
+					<span class="productNameSpan">C77124</span>
+					<span class="reviewWriteDateSpan">2017-03-07</span>
+				</div>
+				<div class="reviewContentDiv">좀 딱딱해요 표면이</div>
+				<div class="reviewWriterDiv">
+					<span class="writerIdSpan">kmk***</span>
+					<span class="writerDetailSpan">여,30대</span>
+				</div>
+			</div>
+			<div class="reviewDiv">
+				<div class="reviewTitleDiv">
+					<span class="emptyStarSpan"><span class="fullStarSpan"></span></span>
+					<span class="productNameSpan">C77124</span>
+					<span class="reviewWriteDateSpan">2017-03-07</span>
+				</div>
+				<div class="reviewContentDiv">오리지널은 몇개있어서 운동화사이즈로 10미리 작게 주문하는데 배송빨라서좋네요!!</div>
+				<div class="reviewWriterDiv">
+					<span class="writerIdSpan">shy***</span>
+					<span class="writerDetailSpan">여,20대</span>
+				</div>
+			</div>
+			<div class="reviewDiv">
+				<div class="reviewTitleDiv">
+					<span class="emptyStarSpan"><span class="fullStarSpan"></span></span>
+					<span class="productNameSpan">C77124</span>
+					<span class="reviewWriteDateSpan">2017-03-07</span>
+				</div>
+				<div class="reviewContentDiv">빠른배송좋아요</div>
+				<div class="reviewWriterDiv">
+					<span class="writerIdSpan">gkd***</span>
+					<span class="writerDetailSpan">여,30대</span>
+				</div>
+			</div>
+			<div class="reviewDiv">
+				<div class="reviewTitleDiv">
+					<span class="emptyStarSpan"><span class="fullStarSpan"></span></span>
+					<span class="productNameSpan">C77124</span>
+					<span class="reviewWriteDateSpan">2017-03-07</span>
+				</div>
+				<div class="reviewContentDiv">딸아이가 좋아하네요</div>
+				<div class="reviewWriterDiv">
+					<span class="writerIdSpan">neo***</span>
+					<span class="writerDetailSpan">남,40대</span>
+				</div>
+			</div>
+			<a href="#" id="moreReviewButton">리뷰 더보기</a>
 		</div>
 	</div>
 </section>
+<c:import url="/WEB-INF/views/common/footer.jsp"/>
 </body>
 </html>
