@@ -23,4 +23,11 @@ public class OrderAndPayController {
 		
 		return "orderandpay/cart";
 	}
+	
+	@RequestMapping(value = "finish.do")
+	public String finish() {
+		
+		
+		return "orderandpay/finish";
+	}
 }

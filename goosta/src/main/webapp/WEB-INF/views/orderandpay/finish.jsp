@@ -1,12 +1,53 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>주문완료</title>
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	
+<!-- CSS -->
+		<link href="resources/css/header/header.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	   
+	   	<!-- JS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.nicescroll.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/superfish.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.flexslider-min.js" type="text/javascript"></script>
+		<script src="resources/js/main/owl.carousel.js" type="text/javascript"></script>
+		
+		
+		<!-- CSS -->
+		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/footer/footer.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="resources/css/footer/jquery.scrolltop.css">
+		
+		
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	    
+		<!-- SCRIPTS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/bootstrap.min.js" type="text/javascript"></script>
+		<script src="resources/js/footer/jquery.scrolltop.js"></script>
+		<script type="text/javascript">
+jQuery(document).ready(function(){
+	$.scrolltop({
+	    template: '<i class="fa fa-chevron-up"></i>',
+	    class: 'custom-scrolltop'
+	});
+});
+</script>
 <style type="text/css">
 * {
 	padding: 0px;
@@ -20,7 +61,7 @@ section {
 	margin: auto;
 	margin-top: 3%;
     width: 1500px;
-    height: 640px;
+    height: 1200px;
 }
 
 a{
@@ -85,8 +126,9 @@ a:visited{
     padding-bottom:12;
     text-align: left;
 }
-.pointcol {
+.won {
     color: #0487cd;
+    font-weight: bold;
 }
 .tb td.order_money {
     width: 138px;
@@ -163,13 +205,14 @@ a:visited{
 }
 em, address {
     font-style: normal;
+    font-size: 15px;
 }
-.tb dl.naver_plus .modify_sec {
+.tb .modify_sec {
     padding: 3px 0;
     padding-bottom:3px;
     padding-top:3px;
 }
-.tb dl.naver_plus dd.shp_toggle {
+.tb dd.shp_toggle {
     position: absolute;
     left: 0;
     top: 0;
@@ -180,24 +223,54 @@ em, address {
 }
 .tb .bg_point2 {
     background-color: #0487cd;
+    height: 95px;
+    padding-left: 15px;
 }
-.tb tfoot td.amount li strong {
+.tb tbody td.amount li strong {
     float: left;
     margin-top: 1px;
     font-weight: normal;
     color: #fff;
+    font-size: 15px;
 }
-.tb tfoot td.amount li p em {
+.tb tbody td.amount li p em {
     color: #fff;
     font-weight: bold;
     letter-spacing: 0;
 }
-.tb tfoot td.amount li {
+.tb tbody td.amount li {
     overflow: hidden;
     line-height: 20px;
     zoom: 1;
     list-style: none;
+    padding-top: 10px;
 }
+
+
+/* tfoot */
+.tb tfoot td.amount.card{
+	background: #f6f6f6;
+}
+.tb tfoot td.amount.card2{
+	background: #f6f6f6;
+}
+.tb tfoot td.amount li strong {
+    float: left;
+    margin-top: 10px;
+    font-weight: normal;
+    color: #000;
+    
+}
+.tb tfoot td.amount li p em {
+    letter-spacing: 0;
+}
+.tb tfoot td.amount li {
+    overflow: hidden;
+    line-height: 23px;
+    zoom: 1;
+    list-style: none;
+}
+
 .tb tfoot td.tot {
     vertical-align: bottom;
 }
@@ -212,17 +285,25 @@ em, address {
     font-weight: bold;
 }
 .tb tfoot td.amount {
-    padding: 25px 10px 15px;
+    padding: 0px 10px 25px;
     border-top: none;
-    color: #fff;
+    
     font-size: 15px;
+}
+
+.tb tfoot td.amount.card2 strong{
+	font-size: 20px;
+	font-weight: bold;
+}
+.tb tfoot td.amount.card2 p em{
+	font-size: 24px;
+	font-weight: bold;
 }
 .bg_point{
 	width: 150px;
 }
 #ppp {
     text-align: center;
-    
     font-size: 25px;
 }
 
@@ -233,7 +314,7 @@ em, address {
 #p{
     padding-bottom: 32px;
     text-align: center;
-    font-size:15px;
+    font-size:13px;
     padding-top: 30px;
 }
 #pppp{
@@ -252,36 +333,98 @@ em, address {
     font-size: 15px;
     font-weight:bold;
     margin-left: 10px;
+    padding-top: 10px;
+}
+.prime_benefit dt.ico, .tb_list2 td.money .benefit .ico_v2 {
+	width: 75px;
+    height: 25px;
+}
+.blind{
+	background: lightgray;
+    color: white;
+}
+#str{
+    margin-left: 30px;
+}
+#tbo{
+	border-bottom: 1px solid lightgray;
+}
+#add{
+    padding-top: 10px;
+}
+.row{
+	background:lightgray;
+}
+.address{
+	height: 46px;
+	vertical-align: middle;
+	border-bottom: 1px solid lightgray;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+.tb_btnone{
+	border-bottom: 1px solid lightgray;
+}
+
+.memo{
+	height: 126px;
     padding-top: 20px;
+    padding-left: 10px;
+}
+
+.address span, .memo span{
+	margin-left: 50px;
+}
+#strr{
+	font-weight:bold;
+	font-size:20px;
+	padding-bottom: 10px;
+}
+.total{
+   color: #0487cd;
+    font-weight: bold;
+    font-size: 13pt;
+}
+.won2{
+	color:white;
+}
+#rrr{
+    color: #0487cd;
+}
+#p5 span{
+	font-size: 17pt;
 }
 </style>
-
 <title>결제 완료</title>
 </head>
 <body>
+<c:import url="/WEB-INF/views/common/header.jsp"></c:import>
 	<section>
 	<div id="pay">
-			<div class="pay2">
-				<ol class="process">
-					<li class="on"><em class="pro"><span class="blind">주문완료</span></em></li>
-					<li><em class="pro2"><span class="blind">주문/결제</span></em></li>
-					<li><em class="pro3"><span class="blind">주문완료</span></em></li>
-				</ol>
-				<h3 class="basket">
-					<span class="blind">주문완료</span>
-				</h3>
-			</div>
+		<div class="pay2">
+			<ol class="process">
+				<li class="on"><em class="pro"><span class="order">주문완료</span></em></li>
+				<li><em class="pro2"><span class="order">주문/결제</span></em></li>
+				<li><em class="pro3"><span class="order">주문완료</span></em></li>
+			</ol>
+			<h3 class="basket">
+				<span class="order">주문완료</span>
+			</h3>
 		</div>
+	</div>
 	<div>
 		<div id="pppp">
 			<div id="ppp">
 				<div id="p5">
-					고객님의<span class="pp"> 주문이 정상적으로 완료 </span>되었습니다.
+				<span>
+					고객님의</span><span class="pp"> 주문이 정상적으로 완료 </span><span>되었습니다.</p>
 					<div id="p">
 						결제금액 <span class="pp">183,000원</span> (신용카드 결제 <span class="pp">183,000원</span>)
 					</div>
 				</div>
-				<div id="p6">주문번호<span class="pp"">2017030818181818</span></div>
+				<div id="p6">
+					주문번호<span class="pp"">2017030818181818</span>
+				</div>
 			</div>
 		</div>
 		<div id="pay3">
@@ -309,7 +452,7 @@ em, address {
 						<th scope="col" class="bg_point">주문금액</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody id="tbo">
 					<tr class="tr2">
 						<td class="check"><input type="checkbox"
 							class="_cart_order_checkbox  _click(nmp.front.order.cart.toggleOne()) "
@@ -326,20 +469,14 @@ em, address {
 											onerror="this.onerror=null;this.src='http://img.shop.naver.net/front/common/noimg/no_img_80x80.jpg'"></a>
 									</div>
 								</div>
-								<dl class="naver_plus">
+								
 									<dt class="zzim_add">
 										<a
 											href="http://pay.naver.com/inflow/outlink?url=http%3A%2F%2Fstorefarm.naver.com%2Fmain%2Fproducts%2F537137843&amp;accountid=s_524552024631890520&amp;tr=myc"
 											target="_blank">프라다 사피아노 사이드 슬립 카드홀더</a> <a href="#"
 											class="zzim _click(nmp.front.order.cart.keepOne(2017030853141866))">찜하기</a>
 									</dt>
-									<dd class="modify_sec">
-										<a href="#" target="_blank" title="주문조건 추가/변경"
-											class="btn_od_modify _click(nmp.front.order.cart.modifyCartProduct(2017030853141866,false)) _stopDefault"><span
-											class="blind">주문 조건 추가/변경</span></a>
-									</dd>
 									<dd>
-
 										<ul class="option">
 											<li>색상: 다크 네이비 / 1개</li>
 										</ul>
@@ -347,25 +484,16 @@ em, address {
 									<dd class="shp_toggle">
 										<span class="overseas">해외배송</span>
 									</dd>
-								</dl>
+								
 							</div>
 						</td>
 						<td><em class="_product_quantity mount thm"> <strong
-								class="_product_quantity mount thm">1</strong></em><strong
-							class="_product_quantity mount thm"> <a href="#"
-								target="_blank"
-								class="btn_pd_edit _click(nmp.front.order.cart.modifyCartProduct(2017030853141866,false)) _stopDefault">
-									<span class="blind"></span>
-							</a> <!-- 찜하기 테스트 area start. (찜하기 page 에 붙이고 나면 삭제 필요.) --> <a
-								href="#"
-								class="btn_ordel _click(nmp.front.order.cart.openPopWishListOrder(500202891,537137843)) _stopDefault"><span
-									class="blind"></span></a> <a href="#"
-								class="btn_ordel _click(nmp.front.order.cart.openPopWishListCart(500202891,537137843)) _stopDefault"><span
-									class="blind"></span></a> <!-- 찜하기 테스트 area end.-->
-						</strong></td>
-						<td><span class="num"><em class="thm _sumOrderAmount">
+								class="_product_quantity mount thm">1</strong></em>
+								<strong class="_product_quantity mount thm"></strong> 
+								<a href="#" target="_blank"
+							class="btn_pd_edit _click(nmp.front.order.cart.modifyCartProduct(2017030853141866,false)) _stopDefault">
+						</a> <span class="blind"></span><td><span class="num"><em class="thm _sumOrderAmount">
 									183,000</em>원</span></td>
-
 						<td class="dc_money"><em class="thm">0</em>원</td>
 
 						<td rowspan="1" class="seller bg_point">
@@ -377,56 +505,117 @@ em, address {
 						<td rowspan="1" class="bg_point order_seller"><a
 							href="http://storefarm.naver.com/chelseaqueen"
 							class="store ellipsis" target="_blank">첼시퀸</a></td>
-						<td class="bg_point order_money"><strong class="pointcol">
+						<td class="bg_point order_money">
+						<strong id="rrr">
 								<em class="thm">183,000</em>원
 						</strong>
 					</tr>
 				</tbody>
-				<tfoot>
+				<tbody>
 					<tr>
-						<td colspan="5">&nbsp;</td>
+						<td colspan="5"></td>
 						<td colspan="3" class="amount bg_point2">
-							<dl>
+							
 								<dt class="blind"></dt>
 								<dd>
 									<ul>
 										<li><strong>총 상품금액</strong>
-											<p>
+											<p class="won2">
 												<em class="thm _totalOrderAmount">183,000</em> 원
 											</p></li>
 										<li><strong>배송비</strong>
-											<p>
+											<p class="won2">
 												(+) <em class="thm _totalDeliveryFeeAmount">0</em>원
 											</p></li>
 										<li><strong>총 할인금액</strong>
-											<p>
+											<p class="won2">
 												(-) <em class="thm _totalDiscountAmount">0</em>원
 											</p></li>
 									</ul>
 								</dd>
-							</dl>
+							
 						</td>
 					</tr>
 					<tr>
-						<td colspan="5" class="tb_btnone">&nbsp;</td>
+						<td colspan="5" class="tb_btnone">
+							<div class="sub_benefit">
+								
+									<dt class="ico">
+										<span class="blind">적립혜택</span>
+									</dt>
+									<dd>
+										<ul>
+											<li class="first">구매확정시 마일리지 <span class="won">2,180</span>원
+												<span id="str">구매평/리뷰 작성시 마일리지</span> <span class="won">500</span>원
+											</li>
+										</ul>
+									</dd>
+								
+							</div>
+						</td>
+
 						<td colspan="3" class="amount bg_point2 tot">
-							<dl>
+							
 								<dt class="blind"></dt>
 								<dd>
 									<ul>
 										<li><strong>결제금액</strong>
-											<p>
+											<p class="won2">
 												<em class="thm _subTotal">183,000</em> 원
 											</p></li>
 									</ul>
 								</dd>
-							</dl>
+							
 						</td>
 					</tr>
-				</tfoot>
-			</table>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							<div class="address">
+								<strong>배송지정보</strong> <span>서울시 강남구 역삼동 120-44</span>
+							</div>
+							<div class="memo">
+								<strong>배송지메모</strong> <span>집에 놔주세요</span>
+							</div>
+						</td>
+						<td colspan="3" class="amount card">
+							
+								<dt class="blind"></dt>
+								<dd>
+									<ul>
+										<li><strong id="strr">결제정보</strong>
+										<li><strong>결제방식</strong>
+											<p>
+												<em class="thm _totalDeliveryFeeAmount">신용카드</em>
+											</p></li>
+										<li><strong>카드정보</strong>
+											<p>
+												<em class="thm _totalDiscountAmount">롯데(일시불)</em>
+											</p></li>
+										<li><strong>카드번호</strong>
+											<p>
+												<em class="thm _totalDiscountAmount">1234-1234-1234-1234</em>
+											</p></li>
+										<li><strong>승인일시</strong>
+											<p>
+												<em class="thm _totalDiscountAmount">2017-03-09</em>
+											</p></li>
+										<li><strong>결제금액</strong>
+											<p>
+												<em class="total">183,000</em> 원
+											</p></li>
+										</ul>
+									</dd>
+								
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
 		</div>
 	</div>
 	</section>
+	<c:import url="/WEB-INF/views/common/footer.jsp"/>
 </body>
 </html>
