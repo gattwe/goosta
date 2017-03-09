@@ -16,8 +16,9 @@ public class CommonController {
 		return "member/login";
 	}
 	
-	@RequestMapping("main.do")
-	public String viewMain(){
+	@RequestMapping(value = "main.do", method = RequestMethod.GET)
+	public String main(Locale locale, Model model) {
+		
 		
 		return "common/main";
 	}

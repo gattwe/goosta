@@ -9,6 +9,7 @@
     width: 100%;
     height: 30px;
     padding-top: 10px;
+<<<<<<< HEAD
     padding-left: 1266px;
 }
 a {
@@ -143,6 +144,134 @@ a {
 									</div>
 								</li>
 								<li class="sub-menu" style="height: 70px;">
+
+<!-- HEADER -->
+		<header>
+		<!-- LOGIN -->
+			<div class="login-right">
+				<a href="#">로그인</a>&nbsp; |&nbsp;
+				<a href="#">회원가입</a>&nbsp; |&nbsp;
+				<a href="#">장바구니</a>&nbsp; |&nbsp;
+				<a href="#">주문조회</a>&nbsp; |&nbsp;
+				<a href="#">마이페이지</a>
+			</div>
+		
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<a href="index.html" ><span class="b1">G</span><span class="b2">o</span><span class="b3">o</span><span class="b4">s</span><span class="b5">t</span><span class="b5">a</span></a>
+					</div><!-- //LOGO -->
+					
+					<!-- SEARCH FORM -->
+					<div id="search-form" class="pull-right">
+						<form method="get" action="#">
+							<input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+						</form>
+					</div><!-- SEARCH FORM -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu">
+							<ul>
+								<li class="sub-menu">
+									<a href="#home" class="bigmenu">ShoppingMall</a>
+									<div class="depth2_contents">
+										<div class="shopping_mall">
+											<div class="ctgr_box">
+												<div class="box img_box">
+													<dl>
+														<dt><img src="resources/images/header/nike.PNG" style="width: 120px; height: 40px;"></dt>
+														<dd>
+															<div class="small_picture">
+																<img src="resources/images/header/nike_img.PNG" style="width: 200px; height: 70px;">
+															</div>
+															<div class="menu_sort">
+																<ul style="padding-left: 10px; padding-right: 10px;">
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">신상품</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">베스트셀러</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">런닝</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">축구</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">농구</a></li>
+																	<hr style="margin : 5px 0 5px 0;">
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">전체보기</a></li>
+																</ul>
+															</div>
+															<!-- <div style="height: 1px;background-color: #666; margin-top: 10px;"></div>
+															<div class="menu_sort">
+																<ul>
+																	<li class="li_part">전체보기</li>
+																</ul>
+															</div> -->
+														</dd>
+													</dl>
+													<dl>
+														<dt><img src="resources/images/header/adidas.PNG" style="width: 120px; height: 40px;"></dt>
+														<dd>
+															<div class="small_picture">
+																<img src="resources/images/header/adidas_img.PNG" style="width: 200px; height: 70px;">
+															</div>
+															<div class="menu_sort">
+																<ul style="padding-left: 10px; padding-right: 10px;">
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">신상품</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">베스트셀러</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">런닝</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">축구</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">농구</a></li>
+																	<hr style="margin : 5px 0 5px 0;">
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">전체보기</a></li>
+																</ul>
+															</div>
+														</dd>
+													</dl>
+													<dl>
+														<dt><img src="resources/images/header/newbal.PNG" style="width: 120px; height: 40px;"></dt>
+														<dd>
+															<div class="small_picture">
+																<img src="resources/images/header/newbal_img.PNG" style="width: 200px; height: 70px;">
+															</div>
+															<div class="menu_sort">
+																<ul style="padding-left: 10px; padding-right: 10px;">
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">신상품</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">베스트셀러</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">런닝</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">축구</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">농구</a></li>
+																	<hr style="margin : 5px 0 5px 0;">
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">전체보기</a></li>
+																</ul>
+															</div>
+														</dd>
+													</dl>
+													<dl>
+														<dt><img src="resources/images/header/puma.PNG" style="width: 120px; height: 40px;"></dt>
+														<dd>
+															<div class="small_picture">
+																<img src="resources/images/header/puma_img.PNG" style="width: 200px; height: 70px;">
+															</div>
+															<div class="menu_sort">
+																<ul style="padding-left: 10px; padding-right: 10px;">
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">신상품</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">베스트셀러</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">런닝</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">축구</a></li>
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">농구</a></li>
+																	<hr style="margin : 5px 0 5px 0;">
+																	<li class="li_part"><a href="" style="margin: 0; padding: 5px 0 0 5px; color: black;">전체보기</a></li>
+																</ul>
+															</div>
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="sub-menu">
 									<a href="#about" class="bigmenu">Community</a>
 									<div class="depth2_contents">
 										<div class="community_words">

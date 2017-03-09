@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /bin/
 
 # Created by https://www.gitignore.io/api/windows,eclipse,java
@@ -101,4 +102,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/windows,eclipse,java
+=======
+>>>>>>> refs/remotes/origin/ohsongha
 /target/
