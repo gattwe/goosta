@@ -15,5 +15,10 @@
       ]]>
    </select>
    
+   <insert id="insertmember" parameterType="member">
+   		insert into member value(#{memberid}, #{memberpwd}, #{membername}, #{memberbirth});
+   		
+   </insert>
+   
    
 </mapper>

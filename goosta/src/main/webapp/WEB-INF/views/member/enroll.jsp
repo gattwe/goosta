@@ -64,8 +64,8 @@ element.style {
 }
 
 .register-main .register_form .row input[type="text"], .register-main .register_form .row input[type="password"] {
-    width: 438px;
-    height: 36px;
+    width: 479px;
+    height: 40px;
     border: 1px solid #c8cbcc;
     padding-left: 10px;
     font: 13px/36px 'NotoSansKRRegular','Nanum Gothic';
@@ -75,8 +75,8 @@ element.style {
 .register-main{
 	padding: 30px 0 75px;
 	margin: auto;
-	margin-left: 20%;	
-	margin-top: 100px;
+	margin-left: 25%;	
+	margin-top: 50px;
 }
 
 .register-main h3{
@@ -193,7 +193,7 @@ div, p, ol, ul, li, img, a, h1, h2, h3, h4, h5, h6, form, span, iframe, dl, dt, 
     font: 13px 'adinenuPro-regular';
 }
 .register-main .register_form .row.email .col input {
-    width: 118px;
+    width: 145px;
 }
 
 .email-select{
@@ -211,7 +211,7 @@ div, p, ol, ul, li, img, a, h1, h2, h3, h4, h5, h6, form, span, iframe, dl, dt, 
     right: 0;
 }
 .register-main .register_form .row.phone .col input {
-    width: 118px;
+    width: 140px;
 }
 .register-main .register_form .row.phone{
 	height: 40px;
@@ -261,7 +261,7 @@ div, ul, ol {
 }
 
 .register-main .register_form .row.birth .col input {
-    width: 118px;
+    width: 140px;
    
     
 }
@@ -274,7 +274,7 @@ div, ul, ol {
   
 }
 .register-main .register_form .row.birth .col input {
-    width: 118px;
+    
     float: left;
 }
 
@@ -326,7 +326,7 @@ div, ul, ol {
 
 .register-main .register_form .row.address{
 	display: inline-block;
-	width: 450px;
+	width: 479px;
 }
 
 .register-main .register_form .row.address .col.post1 {
@@ -343,7 +343,7 @@ div, ul, ol {
     
 }
 .register-main .register_form .row.address .col.a {
-    width: 32px;
+    width: 50px;
     display: inline-block;
     text-align: center;
 }
@@ -360,10 +360,126 @@ div, ul, ol {
 	border: none;
 	color: white;
 }
+
+.row.email2 .col.validate1 input{
+	width: 275px;
+}
+.row.email2 .col.validate1{
+	display: inline-block;
+}
+
+.row.email2{
+	display: inline-block;
+	height: 40px;
+}
+
+.row.email2 .col.validate1 .va{
+	width: 150px;
+	height: 40px;
+	display: inline-block;
+	margin-left:53px;
+	letter-spacing:-0.5px;
+	background: #ccc;
+	transition:background 0.3s;
+	-webkit-transition:background 0.3s;
+}
+.row.email2 .col.validate1 .va span{
+	font:14px/24px 'NotoSansKRRegular','Nanum Gotic';
+	line-height: 40px;
+	text-align: center;
+	position: relative;
+	left: 60px;
+}
+
 </style>
 
 <script type="text/javascript">
-
+	$(function(){
+		$('#upwhi').hide();
+		$('#re_upwhi').hide();
+		$('#uidhi').hide();
+		
+		//정규표현식
+		var reg_uid = /^[a-z0-9_]{5,12}$/; //5~12자 영문소문자, 숫자, 특수문자 _ 사용가능
+		var reg_upw = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-]|.*[0-9]).{6,24}$/; 
+		//6~16자 영문대소문자, 숫자, 특수문자 혼합하여 사용
+		var reg_nickname = /^[0-9a-zA-Z가-힣]{4,20}$/; //한글10자, 영문20자, 한글,영문,숫자 사용가능
+		
+		//스타일 내역
+		var s_default = {"border":"1px solid #ccc", "background-color":"#fff"}; //기본
+		var s_fail = {"border":"1px solid red","background-color":"#fff2f2"}; //실패
+		var s_success = {"border":"1px solid #214a9e","background-color":"#dee9ff"}; //성공
+		var s_focus = {"border":"1px solid #429e21","background-color":"#fbfff2"} //포커스 시
+		  
+		var form = $("form"),
+		    uid = $("#uid"),
+		    upw = $("#upw"),
+		    re_upw = $("#re_upw"),
+		    nickname = $("#nickname");
+		  
+		
+		$("input[type='text']").focus(function(){
+		    //포커싱 시 출력되는 스타일(녹색으로~)
+		    $(this).css(s_focus);
+		  
+		    if( this.id == "uid" ){
+		        $(this).next().next().show();
+		    }
+		});
+		$("input[type='password']").focus(function(){
+			$(this).css(s_focus);
+			
+			if( this.id == "upw" ){
+		        $("#upwhi").show();
+		    }
+		});
+		   
+		$("input").blur(function(){
+		    //기본적으로 blur 되면 배경색이 원래대로..
+		    $(this).css(s_default);
+		      
+		    //아이디 입력 : 올바른 값이 입력되지 않으면 빨간색으로 출력
+		    if( this.id == "uid" ){
+		        if( $(this).val() == "" ){
+		            $(this).css(s_default);
+		            $('#uidhi').hide();
+		        }else   if( reg_uid.test( $(this).val() ) != true ){
+		            $(this).css(s_fail);
+		        }else{
+		            $(this).css(s_success);
+		            $('#uidhi').hide();
+		            
+		        }
+		  
+		    //패스워드 입력
+		    }else if( this.id == "upw"){
+		        var upwSize = $(this).val().length;
+		        if( $(this).val() == "" ){
+		            $(this).css(s_default);
+		            $("#upwhi").hide();
+		        }else if( upwSize < 6 ){
+		            $(this).css(s_fail);
+		        }else{
+		            $(this).css(s_success);
+		            $("#upwhi").hide();
+		        }
+		  
+		    //패스워드 재입력
+		    }else if( this.id == "re_upw"){
+		        if( $(this).val() == "" ){
+		            $(this).css(s_default);
+		            $('#re_upwhi').hide();
+		        }else if( $(this).val() != upw.val() ){
+		            $(this).css(s_fail);
+		            $('#re_upwhi').show();
+		        }else{
+		            $(this).css(s_success);
+		            $('#re_upwhi').hide();
+		        }		  
+		    }
+		  }		
+		);	
+	});
 </script>
 </head>
 <body>
@@ -375,7 +491,7 @@ div, ul, ol {
 	<h3>회원가입</h3>
 	<div class="contents">
 		<div class="register_form">
-		<form action="" id="frmDetail" name="frmDetail">
+		<form action="enroll2.do" id="frmDetail" name="frmDetail">
 		<div class="row">
 			<div class="col">
 				<input type="text" class="name_input" maxlength="15" placeholder="이름">
@@ -383,25 +499,28 @@ div, ul, ol {
 		</div>
 		<div class="row id_check">
 			<div class="col">
-				<input type="text" class="id_input" maxlength="15" placeholder="아이디">
+				<input type="text" id="uid" class="id_input" maxlength="15" placeholder="아이디">
 				<a href="#"  class="btn-ctm btn-lgray anim"><span>중복확인</span></a>
+				<div id="uidhi">5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.</div>
 			</div>
+			
 		</div>
 		<div class="row">
 		<div class="col pwd_text_wrap">
-			<input type="password" class="pwd_text" maxlength="15" placeholder="비밀번호"> 
+			<input type="password" id="upw" class="pwd_text" maxlength="15" placeholder="비밀번호"> 
 		</div>
+		<div id="upwhi">6~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</div>
 		</div>
 		<div class="row">
 			<div class="col pwd_text_wrap">
 
-				<input type="password" class="pwd_text" maxlength="15" value="" placeholder="비밀번호 확인">
-				
+				<input type="password" id="re_upw"class="pwd_text" maxlength="15" value="" placeholder="비밀번호 확인">
+				<div id="re_upwhi">비밀번호가 일치하지 않습니다.</div>
 			</div>
 		</div>
 		<div class="row email">
 		<div class="col box1">
-			<input type="text" maxlength="20" placeholder="이메일">			
+			<input type="text" id="email"maxlength="20" placeholder="이메일">			
 		</div>
 		<div class="col a">@</div>
 		<div class="col box2">
@@ -418,6 +537,13 @@ div, ul, ol {
 		</select>
 		
 		</div>
+		</div>
+		<div class="row email2">
+		<div class="col validate1">
+			<input type="text" class="vali" placeholder="인증번호">
+			<a href="#" class="btn-ctm btn-lgray va"><span>인증</span></a>
+			</div>
+			
 		</div>
 		<div class="row phone">
 		<div class="col">
@@ -504,6 +630,9 @@ div, ul, ol {
 							<li class="last"><span class="spt_bg"></span>마케팅 수신동의 하시면,<br>할인쿠폰 및 이벤트 등의 소식을 받으실 수 있습니다.</li>
 						</ul>
 					</div>
+		<div>
+			
+		</div>
 	</div>
 	</div>
 	</div>
