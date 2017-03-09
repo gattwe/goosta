@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html5>
 <html lang="ko">
 <head>
@@ -7,11 +8,44 @@
 <link href="resources/css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="resources/js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CSS -->
+		<link href="resources/css/header/header.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	   
+	   	<!-- JS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.nicescroll.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/superfish.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.flexslider-min.js" type="text/javascript"></script>
+		<script src="resources/js/main/owl.carousel.js" type="text/javascript"></script>
+		
+		
+		<!-- CSS -->
+		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/footer/footer.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="resources/css/footer/jquery.scrolltop.css">
+		
+		
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	    
+		<!-- SCRIPTS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/bootstrap.min.js" type="text/javascript"></script>
+		<script src="resources/js/footer/jquery.scrolltop.js"></script>
+		
 <title>공지사항</title>
 </head>
 <style>
 .container-fluid {
-	width: 1200px;
+	width: 1253px;
 	height: 850px;
 	margin: auto;
 	margin-top: 50px;
@@ -138,11 +172,12 @@ color : darkgray;
 	width: 105px;
 }
 #title{
-width: 87px;
+width: 60px;
 margin: auto;
 margin-bottom: 30;
 color : gray;
-font-size : 16pt;
+font-size : 11pt;
+font-weight : bold;
 }
 #submenu_tr th{
 color : gray;
@@ -153,6 +188,7 @@ cursor : pointer;
 }
 </style>
 <body>
+<c:import url="/WEB-INF/views/common/header.jsp"></c:import>
 	<div class="container-fluid">
 		<div id="menu" onclick="location.href='viewCustomer.do';">
 			<ul id="menu_ul">
@@ -232,5 +268,6 @@ cursor : pointer;
 		</div>
 		<div id="paging">◀ 1 2 3 4 5 ▶</div>
 	</div>
+	<c:import url="/WEB-INF/views/common/footer.jsp"/>
 </body>
 </html>

@@ -5,8 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
-		<!-- CSS -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!-- CSS -->
 		<link href="resources/css/header/header.css" rel="stylesheet" type="text/css" />
 		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	    
@@ -39,8 +42,7 @@
 		<script src="resources/js/footer/jquery.scrolltop.js"></script>
 <style>
 #frame{
-width : 1000px;
-height : 900px;
+width : 1200px;
 margin : auto;
 }
 #shand_table{
@@ -50,8 +52,6 @@ border-collapse : collapse;
 color : gray;
 text-align : center;	
 border-top : 1px solid lightgray;
-border-left : 1px solid lightgray;
-border-right : 1px solid lightgray;
 }
 #shand_table td{
 height : 200px;
@@ -70,25 +70,82 @@ margin-top : 6px;
 margin-bottom : 10px;
 }
 #write{
-width : 80px;
-height : 30px;
-border : 1px solid lightgray;
-display : block;
-text-align : center;
-line-height : 30px;
-margin-top : 20px;
-margin-left : 918px;
-color : white;
-background : gray;
+    width: 85px;
+    height: 35px;
+    border: 1px solid gray;
+    display: block;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 20px;
+    margin-left: 1115px;
+    color: white;
+    background: gray;
+    font-weight: bold;
+}
+#write a:hover{
+text-decoratiocn : none;
 }
 #write{
 cursor : pointer;
 }
+.images{
+margin : 0px;
+}
+.item{
+height : 300px;
+}
 </style>
 <title>중고거래</title>
 </head>
+
 <body>
 <c:import url="/WEB-INF/views/common/header.jsp"></c:import>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:1200px; margin:auto;"> 
+	
+	<!--페이지-->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+
+	</ol>
+	<!--페이지-->
+
+	<div class="carousel-inner">
+		<!--슬라이드1-->
+		<div class="item active"> 
+			<img src="resources/images/ysw/1.png" style="max-width:100%" alt="First slide" class="images">
+		</div>
+
+		<!--슬라이드2-->
+		<div class="item"> 
+			<img src="resources/images/ysw/2.png" style="max-width:100%" data-src="" alt="Second slide" class="images">
+		</div>
+		
+		<!--슬라이드3-->
+		<div class="item"> 
+			<img src="resources/images/ysw/3.jpg" style="max-width:100%" data-src="" alt="Third slide" class="images">
+		</div>
+		
+		<!--슬라이드4-->
+		<div class="item"> 
+			<img src="resources/images/ysw/4.jpg"style="max-width:100%" data-src="" alt="Third slide" class="images">
+		</div>
+		
+		<!--슬라이드5-->
+		<div class="item"> 
+			<img src="resources/images/ysw/5.jpg" style="max-width:100%" data-src="" alt="Third slide" class="images">
+		</div>
+	</div>
+	
+	
+	<!--이전, 다음 버튼-->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+	<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
+</div>
+
 <div id="frame">
 <table id="shand_table">
 <tr><td style="width : 30%;"><image style="max-width : 100%;"src="resources/images/ysw/shand.jpg"/></td>
@@ -116,8 +173,10 @@ cursor : pointer;
 <td><div><font size="5">짝퉁맨</font></div></td>
 </tr>
 </table>
-<a id="write">글쓰기</a>
+<a id="write" href="viewShandWrite.do">글쓰기</a>
 </div>
 <c:import url="/WEB-INF/views/common/footer.jsp"/>
+
 </body>
+</html>
 </html>

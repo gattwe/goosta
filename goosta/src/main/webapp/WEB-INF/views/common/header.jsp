@@ -24,8 +24,9 @@ a {
 				<a href="#">회원가입</a>&nbsp; |&nbsp;
 				<a href="#">장바구니</a>&nbsp; |&nbsp;
 				<a href="#">주문조회</a>&nbsp; |&nbsp;
-				<a href="viewCustomer.do">고객센터</a>&nbsp; |&nbsp;
-				<a href="#">마이페이지</a>
+				<a href="#">마이페이지</a>&nbsp; |&nbsp;
+				<a href="viewEvent.do">이벤트</a>&nbsp; |&nbsp;
+				<a href="viewCustomer.do">고객센터</a>
 			</div>
 		
 			<!-- MENU BLOCK -->

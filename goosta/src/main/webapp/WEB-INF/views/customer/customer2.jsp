@@ -12,9 +12,45 @@
 <script src="resources/js/customer/customer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 
+
+	 <!-- CSS -->
+		<link href="resources/css/header/header.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	   
+	   	<!-- JS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.nicescroll.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/superfish.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.flexslider-min.js" type="text/javascript"></script>
+		<script src="resources/js/main/owl.carousel.js" type="text/javascript"></script>
+		
+		
+		<!-- CSS -->
+		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/footer/footer.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="resources/css/footer/jquery.scrolltop.css">
+		
+		
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	    
+		<!-- SCRIPTS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/bootstrap.min.js" type="text/javascript"></script>
+		<script src="resources/js/footer/jquery.scrolltop.js"></script>
+		
+		
+
 <title>고객센터</title>
 
 <body>
+<c:import url="/WEB-INF/views/common/header.jsp"></c:import>
 	<div class="container-fluid" >
 		<div id="menu" onclick="location.href='viewCustomer.do';">
 			<ul id="menu_ul">
@@ -31,17 +67,17 @@
 				<div class="span12" id="sidemenu">
 					<ul id="sidemenu_ul">
 						<li><image class="icon"
-								src="/goosta/resources/img/ysw/delivery.gif"></image> <label
+								src="resources/images/ysw/delivery.gif"></image> <label
 							class="s_ul"><font color="gray" size="4">주문결제/배송
 									안내</font><br> <font size="1" color="lightgray">주문결제와 배송에
 									대한 안내입니다.</font><br> <a><font color="#027dbf" size="1">자세히▶</font></a> </label></li>
 						<li id="etc1"><image class="icon"
-								src="/goosta/resources/img/ysw/change.gif"></image> <label
+								src="resources/images/ysw/change.gif"></image> <label
 							class="s_ul"><font color="gray" size="4">교환/반품 안내</font><br>
 								<font size="1" color="lightgray">교환, 환불에 대한 안내입니다.</font><br>
 								<a><font color="#027dbf" size="1">자세히▶</font></a> </label></li>
 						<li><image class="icon"
-								src="/goosta/resources/img/ysw/call.gif"></image> <label
+								src="resources/images/ysw/call.gif"></image> <label
 							class="s_ul"><font color="gray" size="4">1:1 문의하기</font><br>
 								<font size="1" color="lightgray">1:1로 원하는 질문을 할 수 있습니다.</font><br>
 								<a><font color="#027dbf" size="1">자세히▶</font></a> </label></li>
@@ -70,7 +106,7 @@
 								<th>기타</th>
 							</tr>
 						</table>
-						<dl>
+						<dl id="customerdl">
 							<dt id="qustion">
 								<span id="s1">Q</span> <span id="s2">이거슨 질문 입니다 다 다 다 다 다</span>
 								<span id="s3">▼</span>
@@ -111,5 +147,6 @@
 		<div class="span12" id="recommend">
 		</div>
 	</div>
+	<c:import url="/WEB-INF/views/common/footer.jsp"/>
 </body>
 </html>

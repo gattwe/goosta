@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,12 +10,44 @@
 <link href="resources/css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="resources/js/bootstrap/bootstrap.min.js"></script>
-</head>
 
+		<!-- CSS -->
+		<link href="resources/css/header/header.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	   
+	   	<!-- JS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.nicescroll.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/superfish.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.flexslider-min.js" type="text/javascript"></script>
+		<script src="resources/js/main/owl.carousel.js" type="text/javascript"></script>
+		
+		
+		<!-- CSS -->
+		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/footer/footer.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="resources/css/footer/jquery.scrolltop.css">
+		
+		
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	    
+		<!-- SCRIPTS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/bootstrap.min.js" type="text/javascript"></script>
+		<script src="resources/js/footer/jquery.scrolltop.js"></script>
+		
+</head>
 <style>
 .container-fluid {
-	width: 1200px;
-	height: 850px;
+	width: 1253px;
+	height: 930px;
 	margin: auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -87,17 +120,18 @@ height : 30px;
 }
 #qnatable td{
 border-top : 1px solid lightgray;
-height : 35px;
+height : 60px;
+font-size : 12pt; 	
 }
 #qnatable td input{
 border-radius : 0px;
-height : 20px;
+height : 30px;
 margin-top : 10px;
 margin-left : 10px;
 }
 #qnatable td textarea{
 width : 600px;
-height : 200px;
+height : 400px;
 margin-top : 10px;
 margin-left : 10px;
 resize : none;
@@ -130,17 +164,21 @@ margin-top : 60px;
 display : block;
 }
 #title{
-width: 80px;
+width: 55px;
 margin: auto;
-margin-bottom: 30;
 color : gray;
-font-size : 16pt;
+font-size : 11pt;
+font-weight : bold;
 }
 #menu:hover{
 cursor : pointer;
 }
+form{
+	margin-top: 28px;
+}
 </style>
 <body>
+<c:import url="/WEB-INF/views/common/header.jsp"></c:import>
 	<div class="container-fluid">
 		<div id="menu" onclick="location.href='viewCustomer.do';">
 			<ul id="menu_ul">
@@ -165,5 +203,6 @@ cursor : pointer;
 	</div>
 	</form>
 	</div>
+	<c:import url="/WEB-INF/views/common/footer.jsp"/>
 </body>
 </html>
