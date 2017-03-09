@@ -21,7 +21,7 @@ a {
 		<!-- LOGIN -->
 			<div class="login-right">
 				<a href="login.do">로그인</a>&nbsp; |&nbsp;
-				<a href="#">회원가입</a>&nbsp; |&nbsp;
+				<a href="enroll.do">회원가입</a>&nbsp; |&nbsp;
 				<a href="#">장바구니</a>&nbsp; |&nbsp;
 				<a href="#">주문조회</a>&nbsp; |&nbsp;
 				<a href="#">마이페이지</a>
@@ -35,7 +35,7 @@ a {
 					
 					<!-- LOGO -->
 					<div class="logo pull-left">
-						<a href="index.html" ><span class="b1">G</span><span class="b2">o</span><span class="b3">o</span><span class="b4">s</span><span class="b5">t</span><span class="b5">a</span></a>
+						<a href="/goosta/" ><span class="b1">G</span><span class="b2">o</span><span class="b3">o</span><span class="b4">s</span><span class="b5">t</span><span class="b5">a</span></a>
 					</div><!-- //LOGO -->
 					
 					<!-- SEARCH FORM -->
