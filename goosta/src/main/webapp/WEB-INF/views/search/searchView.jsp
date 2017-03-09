@@ -1,10 +1,40 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
+	<!-- CSS -->
+		<link href="resources/css/header/header.css" rel="stylesheet" type="text/css" />
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	   
+	   	<!-- JS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.nicescroll.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/superfish.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/jquery.flexslider-min.js" type="text/javascript"></script>
+		<script src="resources/js/main/owl.carousel.js" type="text/javascript"></script>
+		
+		
+		<!-- CSS -->
+		<link href="resources/css/main/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/footer/footer.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="resources/css/footer/jquery.scrolltop.css">
+		
+		
+	    
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	    
+		<!-- SCRIPTS -->
+		<script src="resources/js/main/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/js/main/bootstrap.min.js" type="text/javascript"></script>
+		<script src="resources/js/footer/jquery.scrolltop.js"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 	
@@ -118,13 +148,19 @@
 					alert(selected_size +","+ selected_color+","+ selected_brand+","+ selected_category);
 					
 				 });
+				 $.scrolltop({
+					    template: '<i class="fa fa-chevron-up"></i>',
+					    class: 'custom-scrolltop'
+					});
 			});
 </script>
 <style type="text/css"> /*  //////////////////////////////////////스타일///////////////////////////////////////// */  
 .quick_list_header{
 	height: 30px;
 }
-
+.container_wrap{
+	height: 2333px;
+}
 .quickbar_area .quick_product {
 	text-align: center;
     position: relative;
@@ -163,7 +199,7 @@
 }
 
 </style>
-<link rel="stylesheet" type="text/css" href="search.css">
+<link rel="stylesheet" type="text/css" href="resources/css/search/search.css">
 
 <title>검색 결과 페이지</title>
 
@@ -173,7 +209,7 @@
 	<div class="warp">
 		<!-- 헤더 -->
 		<div class="layoutHeader">
-		<c:import url="header/jsp/header.jsp"></c:import>
+			<c:import url="/WEB-INF/views/common/header.jsp"></c:import>
 			<hr>
 		</div>
 		<!-- 풋터 -->
@@ -258,16 +294,16 @@
 										<h4 class="h4group">브랜드</h4>
 										<article class="smart_brand_article">
 											<ul>
-												<li><a href=#><img src="shoeBrandImage/nike.gif"></a></li>
-												<li><a href=#><img src="shoeBrandImage/vans.gif"></a></li>
-												<li><a href=#><img src="shoeBrandImage/adidas.gif"></a></li>
-												<li><a href=#><img src="shoeBrandImage/newbalance.gif"></a></li>
-												<li><a href=#><img src="shoeBrandImage/doctormartens.gif"></a></li>
-												<li><a href=#><img src="shoeBrandImage/reabock.gif"></a></li>
-												<li><a href=#><img src="shoeBrandImage/sperry.gif"></a></li>
-												<li><a href=#><img src="shoeBrandImage/converse.gif"></a></li>
-												<li><a href=#><img src="shoeBrandImage/puma.gif"></a></li>
-												<li><a href=#><img src="shoeBrandImage/fila.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/nike.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/vans.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/adidas.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/newbalance.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/doctormartens.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/reabock.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/sperry.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/converse.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/puma.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeBrandImage/fila.gif"></a></li>
 											</ul>
 										</article>
 									</div>
@@ -278,17 +314,17 @@
 											<section class="category_group">
 											<ul>
 											<h4 class="h4group">운동화</h4>
-												<li><a href=#><img src="shoeCategoryImage/running.gif"></a></li>
-												<li><a href=#><img src="shoeCategoryImage/football.gif"></a></li>
-												<li><a href=#><img src="shoeCategoryImage/basketball.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeCategoryImage/running.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeCategoryImage/football.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeCategoryImage/basketball.gif"></a></li>
 											<h4 class="h4group">구두</h4>
-												<li><a href=#><img src="shoeCategoryImage/loafer.gif"></a></li>
-												<li><a href=#><img src="shoeCategoryImage/oxford.gif"></a></li>
-												<li><a href=#><img src="shoeCategoryImage/deck.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeCategoryImage/loafer.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeCategoryImage/oxford.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeCategoryImage/deck.gif"></a></li>
 											<h4 class="h4group">스니커즈</h4>
-												<li><a href=#><img src="shoeCategoryImage/converseshoes.gif"></a></li>
-												<li><a href=#><img src="shoeCategoryImage/slipon.gif"></a></li>
-												<li><a href=#><img src="shoeCategoryImage/sneakers.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeCategoryImage/converseshoes.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeCategoryImage/slipon.gif"></a></li>
+												<li><a href=#><img src="resources/images/search/shoeCategoryImage/sneakers.gif"></a></li>
 											</ul>
 											</section>
 										</article>
@@ -444,5 +480,6 @@
 			</div>
 		</div>
 	</div>
+	<c:import url="/WEB-INF/views/common/footer.jsp"/>
 </body>
 </html>

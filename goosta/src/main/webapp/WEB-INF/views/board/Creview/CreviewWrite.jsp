@@ -7,8 +7,8 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
 <!-- include summernote css/js--> 
-<link href="summernote/summernote.css" rel="stylesheet"> 
-<script src="summernote/summernote.js"></script>
+<link href="resources/summernote/summernote.css" rel="stylesheet"> 
+<script src="resources/summernote/summernote.js"></script>
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
